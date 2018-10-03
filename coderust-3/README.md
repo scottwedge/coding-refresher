@@ -14,14 +14,18 @@
     - [linear search O(n)](ruby/3.1.rb)
     - [iterative modified binary search O(log(n))](ruby/3.2.rb)
     - [recursive modifed binary search O(log(n))](ruby/3.3.rb)
-    - [find pivot and call binary search O(log(n))](ruby/3.4.rb) (not implemented yet)
+----not implemented yet------------
+    - [find pivot and call binary search O(log(n))](ruby/3.4.rb)
 
 4. Find the least common number in three sorted array
     - [solution O(a + b + c)](ruby/4.1.rb)
     - [elegant code of first solution](ruby/4.2.rb)
 
 5. Rotate an array by given N ( N can be positive or negative)
+    - [Reverse and Reverse again](ruby/5.1.rb)
+    - [Using extra array](ruby/5.2.rb)
 6. Find Low/high index of a an element in a sorted array with duplicates
+    - [modified binary search](ruby/6.1.rb)
 7. Move all zeroes in an array to left.
 8. Given a list of day stock prices (integers for simplicity), return the buy and sell prices for making the maximum profit.We need to maximize the single buy/sell profit and in case we can't make any profit, we'll try to minimize the loss. 
 10. Implement QuickSort
