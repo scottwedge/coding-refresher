@@ -8,7 +8,7 @@
 
 2. Find maximum in sliding window
     - [brute force O(n^2)](ruby/2.1.rb)
-    - [optimied O(n)](ruby/2.2.rb)
+    - [ O(n)](ruby/2.2.rb)
 
 3. Find an element in rotated sorted array / shifted array
     - [linear search O(n)](ruby/3.1.rb)
