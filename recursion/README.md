@@ -11,3 +11,6 @@ def function_name(param1, param2,..., paramn)
   # call the same function_name again exluding the unit of work done
 end
 ```
+
+- If I think about it any problem where a loop is involved can be done with recursion.
+
