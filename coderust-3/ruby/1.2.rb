@@ -1,8 +1,10 @@
+require "./1.test"
+
 def binary_search(arr, key)
   low = 0
   high = arr.size - 1
 
-  while( low < high)
+  while(low <= high)
     mid = low + ( (high - low) / 2)
     if(arr[mid] == key)
       return mid
@@ -14,3 +16,5 @@ def binary_search(arr, key)
   end
   return -1
 end
+
+test
