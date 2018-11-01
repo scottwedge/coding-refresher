@@ -14,7 +14,6 @@
     - [linear search O(n)](ruby/3.1.rb)
     - [iterative modified binary search O(log(n))](ruby/3.2.rb)
     - [recursive modifed binary search O(log(n))](ruby/3.3.rb)
-----not implemented yet------------
     - [find pivot and call binary search O(log(n))](ruby/3.4.rb)
 
 4. Find the least common number in three sorted array

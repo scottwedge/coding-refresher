@@ -1,3 +1,5 @@
+require "./1.test"
+
 def binary_search_rec(arr, key, low, high)
     return -1 if low > high
     mid = low + ( high - low) / 2
@@ -13,3 +15,5 @@ end
 def binary_search(arr, key)
     return binary_search_rec(arr, key, 0, arr.size - 1)
 end
+
+test
