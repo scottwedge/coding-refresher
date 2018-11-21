@@ -43,16 +43,24 @@
 8. Merge Two Sorted Linked Lists
 9. Merge Sort with Linked List
 10. Reverse even nodes
-11. Rotate a Linked List
-12. Reverse k elements
-13. Add Two Integers
-14. Copy linked list with arbitrary pointer
+11. Rotate a Linked List given k. k can be negative or greater than n.
+12. Reverse k elements. if k <= 1 do nothing. if k >= n reverse whole list
+13. Add Two Integers. The first node in a list represents the least significant digit.
+14. Copy linked list with arbitrary pointer. contains next and arbitrary. arbitrary can point to any element.
 
 ### Math & Stats
 
 1. Find kth permuation
-2. Integer Division
-3. Pythagorean Triplets
+Given a set of n elements find their kth permutation. Consider the following set of elements:
+1,2,3. All permutations of the above elements are (with ordering): 
+1st 123     
+2nd 132
+3rd 213
+4th 231
+5th 312 
+6th 321
+2. Integer Division. Given two integers: x and y; return x ÷ y without using '/' (division) or '*' (multiplication) operators. Use Bitwise.
+3. Pythagorean Triplets. Given an integer array find all Pythagorean triplets (a2 + b2 = c2). 3 Sum Problem.
 4. All Sum Combinations
 5. Find Missing Number
 6. Permute String
