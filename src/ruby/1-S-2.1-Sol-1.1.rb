@@ -1,5 +1,5 @@
 def insertion_sort(arr)
-  1.upto(arr.length) do |index|
+  1.upto(arr.length - 1) do |index|
     key = arr[index]
     pos = index - 1
     while pos >= 0 && key <= arr[pos]
