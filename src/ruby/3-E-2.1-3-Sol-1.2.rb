@@ -8,4 +8,3 @@ def linear_search(arr, key, pos = 0)
   return linear_search(arr, key, pos + 1) if pos < arr.length
   return -1
 end
-
