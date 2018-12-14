@@ -3,6 +3,8 @@ def insertion_sort(arr)
     key = arr[index]
     pos = index - 1
     while pos >= 0 && key <= arr[pos]
+      # this could also have been written by swapping repeatedly
+      # instead of copying the bigger element to the empty slot
       arr[pos + 1] = arr[pos]
       pos = pos - 1
     end
