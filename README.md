@@ -26,14 +26,14 @@ This repo is an ongoing implementation of algorithms and problems from these boo
 
 | Problem ID         |  Description  |
 |--------------------|---------------|
-| 1-S-2.1            |  Insertion Sort (Ascending)  |
+| 1-S-2.1            |  Insertion Sort (Ascending)  | 
 | 2-E-2.1-2          |  Insertion Sort (Descending)  |
-| 3-E-2.1-3          |  Linear Search (Iterative)  |
+| 3-E-2.1-3          |  Linear Search  |
 | 4-E-2.1-4          |  Add two n-bit binary integers stored in arrays A and B. Output in n + 1 length array C  |
 | 5-E-2.2-2          |  Selection Sort  |
-| 6-S-2.3            |  Merge Sort with Sentinels  |
+| 6-S-2.3            |  Merge Sort with Sentinels (there is no point in using sentinels in a language lilke ruby (skipping this) |
 | 7-E-2.3-2          |  Merge Sort without Sentinels  |
-| 8-E-2.3-4          |  Insert Sort (Recursive)  |
+| 8-E-2.3-4          |  Insert Sort (Recursive) - Implemented in 1  |
 | 9-E-2.3-5          |  Binary Search  |
 | 10-E-2.3-6         |  Insertion Sort (Use Binary Search to find insertion point)  |
 | 11-E-2.3-7         |  Two Sum Problem (Give n lg n solution)  |
