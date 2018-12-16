@@ -1,10 +1,13 @@
 # merge sort itself is a recursive algorithm so lets see
 def merge(arr, low, mid, high)
   left = arr.slice(low..mid)
-  right = arr.slice(mid+1..arr.length)
+  right = arr.slice(mid+1..high)
   l = r = 0
   for i in low..high
-    if l < left.length && (r >= right.length || left[l] < right[r])
+    if (l < left.length && (
+      r >= right.length || 
+      left[l] < right[r]
+    ))
       arr[i] = left[l]
       l = l + 1
     else
