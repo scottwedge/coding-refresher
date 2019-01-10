@@ -14,6 +14,14 @@ When doing different implementations of the same problem it's better to put them
 
 ## 1. Grokking algorithms
 
+### Chapter 1
+
+1. Binary Search
+2. Travelling Slesman Problem
+3. 
+
+### Chapter 2
+
 ## 3. CLRS
 
 ### Chapter 1
