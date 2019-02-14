@@ -19,6 +19,18 @@ When doing different implementations of the same problem it's better to put them
 
 ### Recursion
 
+It generally follows this format
+
+```python
+def recursive_function(parameter):
+  if(base_condition):
+    # end the recursion
+    # return result if necessary
+  else:
+    # do one unit of work
+    # pass off the rest of work by calling the same function
+```
+
 1. print \* n times
 2. find given string is a palindrome
 3. find pow of n, m
@@ -28,6 +40,21 @@ When doing different implementations of the same problem it's better to put them
 7. draw rectangle - fractal
 8. cantor set
 9. binary search
+
+#### More Recursion Practice Problems
+
+1. reverse a string
+2. Given a binary pattern that contains ‘?’ wildcard character at few positions, find all possible combinations of binary strings that can be formed by replacing the wildcard character by either 0 or 1.
+
+
+What is important in learning a concept is practice.
+
+- https://www.topcoder.com/community/competitive-programming/tutorials/an-introduction-to-recursion-part-1/
+- https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=recursion
+- https://medium.com/@codingfreak/recursion-practice-problems-d8c6b4fbb04e
+- https://www.geeksforgeeks.org/?p=185417
+- https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/tutorial/
+- https://www.one-tab.com/page/eQoldISvTjyZ9F3lqRtmHA
 
 ## 1. Grokking algorithms
 
