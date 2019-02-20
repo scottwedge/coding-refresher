@@ -1,8 +1,8 @@
 # coding-refresher
 
-This repo is an ongoing implementation of algorithms and problems from these books.
+This repo is made for staying in touch with coding.
 
-0. CS106B
+0. CS106B - for learning programming concepts
 1. Grokking Algorithms
 1. The Algorithm Design Manual
 1. Intorduction to Algorithms 3rd Edition
@@ -11,7 +11,12 @@ This repo is an ongoing implementation of algorithms and problems from these boo
 1. Programming Interviews Exposed
 1. Cracking the Coding Interview 6th Ed
 
-When doing different implementations of the same problem it's better to put them in a module and include in the same file instead creating one file for each as it will be easier for reference later
+- https://medium.com/leetcode-patterns
+- https://www.reddit.com/r/lcpatterns
+- https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem
+- https://leetcode.com/problems/subsets/discuss/27281/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning
+- https://leetcode.com/explore/learn/card/recursion-i/250/principle-of-recursion/1439/
+https://medium.com/algorithms-and-leetcode/note-for-divide-and-conquer-algorithms-c8bcffcd4440
 
 ## 0. CS106B
 
@@ -31,21 +36,44 @@ def recursive_function(parameter):
     # pass off the rest of work by calling the same function
 ```
 
-1. print \* n times
-2. find given string is a palindrome
-3. find pow of n, m
-4. print binary - handle negatives
-5. reverseLines of a file
-6. print directory tree
-7. draw rectangle - fractal
-8. cantor set
-9. binary search
+[x] print \* n times
+[x] find given string is a palindrome
+[x] find pow of n, m
+[x] print binary - handle negatives
+[x] print a file in reverse (i.e) last line gets printed first, and so on..
+    - this functions accepts a file handle
+[x] print directory tree
+[x] binary search
+[ ] draw rectangle - fractal
+[ ] cantor set
 
-#### More Recursion Practice Problems
+### Backtracking
 
-1. reverse a string
-2. Given a binary pattern that contains ‘?’ wildcard character at few positions, find all possible combinations of binary strings that can be formed by replacing the wildcard character by either 0 or 1.
+1. print all binary of size n
+1. print all decimal of size n
+1. Print all dice rolls
+1. print all dice rolls that add up to a sum
+1. permute a string
+1. permute a string and eliminate duplicates
+1. sublists
+1. 8 queen
+    - print all solutions
+    - find if a solution exists
+    - generalize to n queen
 
+### More Practice problems
+
+- https://www.techiedelight.com/recursion-practice-problems-with-solutions/
+- https://www.techiedelight.com/Category/backtracking/
+
+
+
+NOTE: Python by default has a recursion depth of 1000. You can increase it by 
+
+```python
+sys.getrecursionlimit()
+sys.setrecursionlimit(1500)
+```
 
 What is important in learning a concept is practice.
 
@@ -55,6 +83,8 @@ What is important in learning a concept is practice.
 - https://www.geeksforgeeks.org/?p=185417
 - https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/tutorial/
 - https://www.one-tab.com/page/eQoldISvTjyZ9F3lqRtmHA
+
+-----
 
 ## 1. Grokking algorithms
 
