@@ -10,31 +10,11 @@ This repo is made for staying in touch with coding.
 1. Elements of Programming Interview
 1. Programming Interviews Exposed
 1. Cracking the Coding Interview 6th Ed
+1. Practice Problems
 
-- https://medium.com/leetcode-patterns
-- https://www.reddit.com/r/lcpatterns
-- https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem
-- https://leetcode.com/problems/subsets/discuss/27281/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning
-- https://leetcode.com/explore/learn/card/recursion-i/250/principle-of-recursion/1439/
-https://medium.com/algorithms-and-leetcode/note-for-divide-and-conquer-algorithms-c8bcffcd4440
+# 0. CS106B
 
-## 0. CS106B
-
-- Before beginning anything complete this. It goes through all the concepts necessary for proceeding further.
-
-### Recursion
-
-It generally follows this format
-
-```python
-def recursive_function(parameter):
-  if(base_condition):
-    # end the recursion
-    # return result if necessary
-  else:
-    # do one unit of work
-    # pass off the rest of work by calling the same function
-```
+## Recursion
 
 [x] print \* n times
 [x] find given string is a palindrome
@@ -47,24 +27,19 @@ def recursive_function(parameter):
 [ ] draw rectangle - fractal
 [ ] cantor set
 
-### Backtracking
+## Backtracking
 
-1. print all binary of size n
-1. print all decimal of size n
-1. Print all dice rolls
-1. print all dice rolls that add up to a sum
-1. permute a string
-1. permute a string and eliminate duplicates
-1. sublists
-1. 8 queen
+[ ] print all binary of size n
+[ ] print all decimal of size n
+[ ] Print all dice rolls
+[ ] print all dice rolls that add up to a sum
+[ ] permute a string
+[ ] permute a string and eliminate duplicates
+[ ] sublists
+[ ] 8 queen
     - print all solutions
     - find if a solution exists
     - generalize to n queen
-
-### More Practice problems
-
-- https://www.techiedelight.com/recursion-practice-problems-with-solutions/
-- https://www.techiedelight.com/Category/backtracking/
 
 
 
@@ -75,8 +50,6 @@ sys.getrecursionlimit()
 sys.setrecursionlimit(1500)
 ```
 
-What is important in learning a concept is practice.
-
 - https://www.topcoder.com/community/competitive-programming/tutorials/an-introduction-to-recursion-part-1/
 - https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=recursion
 - https://medium.com/@codingfreak/recursion-practice-problems-d8c6b4fbb04e
@@ -86,23 +59,23 @@ What is important in learning a concept is practice.
 
 -----
 
-## 1. Grokking algorithms
+# Grokking algorithms
 
-### Chapter 1
+## Chapter 1
 
 1. Binary Search
 2. Travelling Slesman Problem
 3.
 
-### Chapter 2
+## Chapter 2
 
-## 3. CLRS
+# CLRS
 
-### Chapter 1
+## Chapter 1
 
 NA
 
-### Chapter 2
+## Chapter 2
 
 1. insertion sort
 2. linear search
@@ -116,17 +89,17 @@ NA
 10. bubble sort
 11. find inversions in a given array A O(nlog(n)) solution
 
-### Chapter 3
+## Chapter 3
 
 NA
 
-### Chapter 4
+## Chapter 4
 
 1. maximum sum sub array O(n.log(n))
 2. maximum sum sub array O(n^2)
 3. non recursive linear algorithm for maximum sum sub array.
 
-## Math for CS
+## Math for CS in CLRS
 
 Math topics I come accross in these books.
 
@@ -141,5 +114,18 @@ Math topics I come accross in these books.
 - exponentials
 - factorials, stirling's approximation
 - square root
+
+
+## Practice problems
+
+- https://medium.com/leetcode-patterns
+- https://www.reddit.com/r/lcpatterns
+- https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem
+- https://leetcode.com/problems/subsets/discuss/27281/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning
+- https://leetcode.com/explore/learn/card/recursion-i/250/principle-of-recursion/1439/
+https://medium.com/algorithms-and-leetcode/note-for-divide-and-conquer-algorithms-c8bcffcd4440
+
+- https://www.techiedelight.com/recursion-practice-problems-with-solutions/
+- https://www.techiedelight.com/Category/backtracking/
 
 keywords: algorithms, data structures, clrs, cormen, skiena, leiserson, rivest, stein, computer science, coding, programming, ctci
