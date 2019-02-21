@@ -16,27 +16,27 @@ This repo is made for staying in touch with coding.
 
 ## Recursion
 
-[x] print \* n times
-[x] find given string is a palindrome
-[x] find pow of n, m
-[x] print binary - handle negatives
-[x] print a file in reverse (i.e) last line gets printed first, and so on..
+- [x] print \* n times
+- [x] find given string is a palindrome
+- [x] find pow of n, m
+- [x] print binary - handle negatives
+- [x] print a file in reverse (i.e) last line gets printed first, and so on..
     - this functions accepts a file handle
-[x] print directory tree
-[x] binary search
-[ ] draw rectangle - fractal
-[ ] cantor set
+- [x] print directory tree
+- [x] binary search
+- [ ] draw rectangle - fractal
+- [ ] cantor set
 
 ## Backtracking
 
-[ ] print all binary of size n
-[ ] print all decimal of size n
-[ ] Print all dice rolls
-[ ] print all dice rolls that add up to a sum
-[ ] permute a string
-[ ] permute a string and eliminate duplicates
-[ ] sublists
-[ ] 8 queen
+- [ ] print all binary of size n
+- [ ] print all decimal of size n
+- [ ] Print all dice rolls
+- [ ] print all dice rolls that add up to a sum
+- [ ] permute a string
+- [ ] permute a string and eliminate duplicates
+- [ ] sublists
+- [ ] 8 queen
     - print all solutions
     - find if a solution exists
     - generalize to n queen
