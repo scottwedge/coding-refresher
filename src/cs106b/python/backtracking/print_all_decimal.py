@@ -8,4 +8,4 @@ def helper(n, s):
     for i in range(10):
       helper(n, s + str(i))
 
-print_all_decimal(10)
+print_all_decimal(3)
