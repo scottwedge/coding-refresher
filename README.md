@@ -29,8 +29,8 @@ This repo is made for staying in touch with coding.
 
 ## Backtracking
 
-- [ ] print all binary of size n
-- [ ] print all decimal of size n
+- [x] print all binary of size n
+- [x] print all decimal of size n
 - [ ] Print all dice rolls
 - [ ] print all dice rolls that add up to a sum
 - [ ] permute a string
