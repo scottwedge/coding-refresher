@@ -26,7 +26,7 @@ This repo is made for staying in touch with coding.
 - [x] binary search
 - [ ] draw rectangle - fractal
 - [ ] cantor set
-
+resolution > 5
 ## Backtracking
 
 - [x] print all binary of size n

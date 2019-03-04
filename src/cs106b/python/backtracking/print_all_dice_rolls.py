@@ -2,17 +2,13 @@
 # the function has to print all dice rolls possible for "n" dices
 
 def print_all_dice_rolls(n):
-  result_set = []
-  helper(n, [], result_set)
-  return result_set
+  helper(n, "")
 
-def helper(n, roll_set, result_set):
+def helper(n, s):
   if n == 0:
-    result_set.append(list(roll_set))
+    print(s)
   else:
     for i in range(1,7):
-      roll_set.append(i)
-      helper(n - 1, roll_set, result_set)
-      roll_set.pop()
+      helper(n - 1, s + str(i))
 
-print(print_all_dice_rolls(3))
+print_all_dice_rolls(3)
