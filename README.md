@@ -31,7 +31,8 @@ This repo is made for staying in touch with coding and be ready for coding inter
 
 - Well Grounded Rubyist - 3rd Edition
 - 16 chapters - 1 chapter 3 days - approximately 30 pages per chapter - 10 pages everyday.
-- Approx. Time to complete - 50 days
+- https://github.com/jleo3/twgr
+
 
 ### Task 2 - Coding
 

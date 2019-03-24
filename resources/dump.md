@@ -108,3 +108,24 @@ https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions
 
 - [2015 version](http://web.stanford.edu/class/archive/cs/cs106b/cs106b.1162/lecture-videos.shtml)
 - [2008 version](http://web.stanford.edu/class/archive/cs/cs106b/cs106b.1162/lecture-videos-2008.shtml)
+
+# Data Science
+
+- https://github.com/ShuaiW/data-science-question-answer
+- Hands-On Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems 1st Edition, Kindle Edition
+
+# How to Apply for companies ?
+
+- https://www.levels.fyi/
+- https://www.teamblind.com/article/google-engineer---total-compensation-in-us---ultimate-post-jYcrij5X
+- https://github.com/j-delaney/easy-application
+- triple byte
+
+# Design
+
+- https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf
+- https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf
+
+# Some one's workflow
+
+https://workflowy.com/s/wGqavcPQFm
