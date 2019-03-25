@@ -5,11 +5,14 @@ This repo is made for staying in touch with coding and be ready for coding inter
 ## Language Specific Gotchas
 
 1. Choose a language of your choice.
-    - http://www.byte-by-byte.com/choose-the-right-language-for-your-coding-interview/
-    - http://blog.codingforinterviews.com/best-programming-language-jobs/
 1. Data Types
-1. How to check for null, true and false
-1. Learn how to pass objects by value and reference.
+1. Truthy and Falsy values
+1. check for null values
+1. Sentinel Values
+1. string mutability
+1. Conditional Statements
+1. Loops
+1. pass by value vs reference.
 1. Scoping - life time of a variable
 1. basic operations like map, reduce, slice, splice
 1. class
@@ -24,6 +27,18 @@ This repo is made for staying in touch with coding and be ready for coding inter
 - Time Complexities
 - memory and stack frames
 - recursion
+
+Arrays
+Stacks
+Queues
+Linked Lists
+Trees
+Graphs
+Tries (they are effectively trees, but it’s still good to call them out separately).
+Hash Tables
+Heaps
+Sorting
+Searching
 
 ## Daily ToDos
 
@@ -48,12 +63,16 @@ This repo is made for staying in touch with coding and be ready for coding inter
 
 1. Grokking the Object Oriented Design Interview
 
-### Task 4 - System Design
+### Task 4 - Design Patterns
+
+### Task 5 - System Design
 
 1. <a href="https://www.youtube.com/watch?v=-W9F__D3oY4">CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development</a>
 1. Distributed systems in one lesson from Oreilly
 1. Grokking the system design interview
 
-### Task 5 - General
+### Task 6 - General
 
 1. Grokking Algorithms
+
+### Task 7 - Concurreny and MultiThreading
