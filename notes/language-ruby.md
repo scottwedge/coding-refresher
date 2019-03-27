@@ -172,13 +172,45 @@ start_val = 0
 
 ## Arrays
 
+### must know methods
+
+- push, pop
+- shift, unshift
+- length
+- insert
+- delete, delete_at, delete_if
+- clear
+- include?
+- find_index
+- join
+- compact - remove nil elements
+- flatten
+- permutation
+- combination
+- slice
+- splice
+- sort, sort_by
+- uniq, unique!
+
 ### methods and complexities
 
 |method name | complexity | Why | Source |
 |------------|------------|-----|--------|
-| uniq , uniq! | O(n)     | uses hash internally | 
+| uniq , uniq! | O(n)     | uses hash internally | |
+| push , pop | O(n)       | amortized | |
+| shift, unshift | O(n)   | amortized | [ref](https://bobhutchison.wordpress.com/2006/09/23/rubys-arrayshift-is-shifty/) |
+| slice, splice |
 
-### looping
+insert(pos, element1, element2, ...)
+
+### Filling Arrays with default values
+
+```
+default_value = my_val
+[default_value] * n_times
+```
+
+NOTE : don't use Array.new(size, value) since same reference value will copied to all array indices.
 
 #### each and each_with_index
 
