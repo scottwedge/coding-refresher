@@ -1,7 +1,3 @@
-# Ruby
-
-- What is a class?
-
 <details>
   <summary>Answer</summary>
 
@@ -10,6 +6,9 @@
   </p>
 </details>
 
+# Ruby
+
+- What is a class?
 - What is the difference between a class and a module?
 - What is an object?
 - How would you declare and use a constructor in Ruby?
@@ -184,6 +183,61 @@ resource :beer, only: [:show], constraints: {id: Regexp.new(kinds.join('|'))}
 - Describe types of associations in Active Record.
 - What is Scopes? How should you use it?
 - Explain the difference between optimistic and pessimistic locking.
+- Use ActiveSupport::Concern
+
+<details>
+  <summary>Answer</summary>
+
+  <p>
+If the code really belongs in the model (because it relies on ActiveRecord helpers), but there is a coherent grouping of methods, a concern might be worth implementing. For example, many models in a system could enable a user to create a note on a number of models:
+  </p>
+
+```ruby
+require 'active_support/concern'
+
+module Concerns::Noteable
+  extend ActiveSupport::Concern
+
+  included do
+    has_many :notes, as: :noteable, dependent: :destroy
+  end
+
+  def has_simple_notes?
+    notes.not_reminders_or_todos.any?
+  end
+
+  def has_to_do_notes?
+    notes.to_dos.any?
+  end
+
+  def has_reminder_notes?
+    notes.reminders.any?
+  end
+  ...
+end
+```
+The Concern can then be applied like so:
+
+```ruby
+class Language < ActiveRecord::Base
+  include TryFind
+  include Concerns::Noteable
+end
+```
+
+### Pros:
+This is a great way of testing a cohesive piece of functionality and making it clear to other developers that these methods belong together. Unit tests can also operate on a test double or a stub, which will keep functionality as decoupled from the remaining model implementation as possible.
+
+### Cons:
+ActiveSupport::Concerns can be a bit controversial. When they are over-used, the model becomes peppered in multiple files and it’s possible for multiple concerns to have clashing implementations. A concern is still fundamentally coupled to Rails.
+
+#### Ref:
+See also:
+- https://signalvnoise.com/posts/3372-put-chubby-models-on-a-diet-with-concerns
+- http://api.rubyonrails.org/classes/ActiveSupport/Concern.html
+- http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/
+
+</details>
 
 - What is wrong with the code below and how to fix it ?
 
