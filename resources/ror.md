@@ -276,6 +276,7 @@ Incidentally, there’s another issue here (although not what we’re focused on
 
 - How would you define a Person model so that any Person can be assigned as the parent of another Person (as demonstrated in the Rails console below)? What columns would you need to define in the migration creating the table for Person?
 
+
 ```ruby
 irb(main):001:0> john = Person.create(name: "John")
 irb(main):002:0> jim = Person.create(name: "Jim", parent: john)
@@ -341,6 +342,39 @@ Student.find_by_id(4)
   <p>
 - Student.find(4) will raise an error: ActiveRecord::RecordNotFound: Couldn't find Student with id=4
 - Student.find_by_id(4) will return nil and will not raise an error.
+  </p>
+</details>
+
+- Delegates
+
+<details>
+  <summary>Answer</summary>
+
+  <p>
+
+Depending on the source of the bloat, sometimes it makes better sense to delegate to a service class. 10 lines of validation code can be wrapped up in a custom validator and tucked away in app/validators. Transformation of form parameters can be placed in a custom form under app/forms. If you have custom business logic, it may be prudent to keep it in a lib/ folder until it’s well defined.
+
+The beauty of delegation is that the service classes will have no knowledge of the business domain and can be safely refactored and tested without any knowledge of the models.
+
+### Pros:
+
+This approach is elegant and builds a custom library on top of what Ruby on Rails provides out of the box.
+
+### Cons:
+
+If the underlying APIs change, your code will likely need to be updated to match. Instead of coupling to your model layer, you’ve now coupled yourself to either Ruby on Rails or a third-party library.
+
+### See also:
+
+- http://guides.rubyonrails.org/active_record_validations.html#custom-validators
+- https://github.com/apotonick/reform
+- https://robots.thoughtbot.com/activemodel-form-objects
+- https://github.com/timcraft/formeze
+
+### Conclusion :
+This question helps demonstrate two critical skills every Ruby developer needs to develop: how handle complexity from emerging requirements and how to decide the most appropriate refactoring.
+
+By working through different refactoring strategies, I can explore a candidate’s problem solving skills and their overall familiarity with Ruby on Rails and their knowledge of MVC. It’s important to know what is code that is specific to the application and what can be generalized into a completely decoupled piece of functionality.
   </p>
 </details>
 

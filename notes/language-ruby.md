@@ -1,3 +1,43 @@
+# TOC
+
+<!-- TOC -->
+- [TOC](#toc)
+  - [DataTypes](#datatypes)
+  - [Truthy and Falsy values](#truthy-and-falsy-values)
+  - [Check for null values](#check-for-null-values)
+    - [check if variable, method or class is defined](#check-if-variable-method-or-class-is-defined)
+    - [check if a variable has any value](#check-if-a-variable-has-any-value)
+    - [check if array is empty](#check-if-array-is-empty)
+    - [check if hash is empty](#check-if-hash-is-empty)
+  - [Sentinal Values](#sentinal-values)
+    - [INFINITY](#infinity)
+  - [String Mutability](#string-mutability)
+  - [Conditional Statements](#conditional-statements)
+    - [IF..ELSE](#ifelse)
+    - [SWITCH](#switch)
+  - [Loops - Procedural](#loops---procedural)
+    - [while](#while)
+  - [Loops - Functional](#loops---functional)
+    - [map (alias - collect - came from smalltalk)](#map-alias---collect---came-from-smalltalk)
+    - [reduce (alias - inject)](#reduce-alias---inject)
+    - [find (alias - detect)](#find-alias---detect)
+    - [select](#select)
+    - [reject](#reject)
+  - [Pass by Value vs Pass by Reference](#pass-by-value-vs-pass-by-reference)
+  - [Scoping](#scoping)
+  - [Arrays](#arrays)
+    - [must know methods](#must-know-methods)
+    - [methods and complexities](#methods-and-complexities)
+    - [Filling Arrays with default values](#filling-arrays-with-default-values)
+    - [each and each_with_index](#each-and-eachwithindex)
+  - [Hash](#hash)
+    - [implementation details](#implementation-details)
+  - [Set](#set)
+  - [Queue](#queue)
+  - [](#)
+
+<!-- /TOC -->
+
 ## DataTypes
 
 - Booleans
@@ -8,6 +48,8 @@
 - Strings
 - Arrays
 - Hashes
+- Set (needs to include library)
+- Queue (present in Thread::Queue)
 
 ## Truthy and Falsy values
 
@@ -212,5 +254,23 @@ default_value = my_val
 
 NOTE : don't use Array.new(size, value) since same reference value will copied to all array indices.
 
-#### each and each_with_index
+### each and each_with_index
 
+```ruby
+arr.each_with_index do |element, index|
+  # do something with element and indexs
+end
+```
+
+## Hash
+
+### implementation details
+
+- https://anadea.info/blog/how-hash-table-works-ruby-examples
+- https://www.rubyguides.com/2017/02/hash-tables-explained/
+
+## Set
+
+## Queue
+
+## 
