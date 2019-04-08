@@ -1,6 +1,6 @@
 # coding-refresher
 
-This repo is made for staying in touch with coding and be ready for coding interview any time.
+This repo is made for staying in touch with coding and be ready to solve coding problems any time.
 
 ## Language Specific Gotchas
 
@@ -28,17 +28,19 @@ This repo is made for staying in touch with coding and be ready for coding inter
 - memory and stack frames
 - recursion
 
-Arrays
-Stacks
-Queues
-Linked Lists
-Trees
-Graphs
-Tries (they are effectively trees, but it’s still good to call them out separately).
-Hash Tables
-Heaps
-Sorting
-Searching
+## Must know data structures
+
+- Arrays
+- Stacks
+- Queues
+- Linked Lists
+- Trees
+- Graphs
+- Tries (they are effectively trees, but it’s still good to call them out separately).
+- Hash Tables
+- Heaps
+- Sorting
+- Searching
 
 ## Daily ToDos
 
@@ -62,6 +64,7 @@ Searching
 ### Task 3 - Object Oriented Programming
 
 1. Grokking the Object Oriented Design Interview
+2. Practical Object Oriented Programming in Ruby
 
 ### Task 4 - Design Patterns
 
@@ -69,10 +72,16 @@ Searching
 
 1. <a href="https://www.youtube.com/watch?v=-W9F__D3oY4">CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development</a>
 1. Distributed systems in one lesson from Oreilly
-1. Grokking the system design interview
+   1. [star bucks doesn't use two phase commit](https://www.enterpriseintegrationpatterns.com/ramblings/18_starbucks.html)
+   2. [How to beat cap theorem](http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html)
+   3. [There is no now](https://queue.acm.org/detail.cfm?id=2745385)
+   4. [why vector clocks are easy](https://riak.com/why-vector-clocks-are-easy/)
+   5. [why cassandra doesn't need vector clocks](https://www.datastax.com/dev/blog/why-cassandra-doesnt-need-vector-clocks)
+2. Grokking the system design interview
+3. Designing Data Intensive Application
 
 ### Task 6 - General
 
 1. Grokking Algorithms
 
-### Task 7 - Concurreny and MultiThreading
+### Task 7 - concurrency and MultiThreading
