@@ -70,12 +70,12 @@ This repo is made for staying in touch with coding and be ready to solve coding 
 ## System Design
 
 1. <a href="https://www.youtube.com/watch?v=-W9F__D3oY4">CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development</a>
-2. Distributed systems in one lesson from Oreilly
+2. Distributed systems in one lesson from Oreilly (signup for a trial and finish in 10 days)
    1. [star bucks doesn't use two phase commit](https://www.enterpriseintegrationpatterns.com/ramblings/18_starbucks.html)
    2. [How to beat cap theorem](http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html)
    3. [There is no now](https://queue.acm.org/detail.cfm?id=2745385)
    4. [why vector clocks are easy](https://riak.com/why-vector-clocks-are-easy/)
-   5. [why cassandra doesn't need vector clocks](https://www.datastax.com/dev/blog/why-cassandra-doesnt-need-vector-clocks)
+   5. [why Cassandra doesn't need vector clocks](https://www.datastax.com/dev/blog/why-cassandra-doesnt-need-vector-clocks)
 3. Grokking the system design interview
 4. Designing Data Intensive Application
 
