@@ -34,7 +34,7 @@
     - [implementation details](#implementation-details)
   - [Set](#set)
   - [Queue](#queue)
-  - [](#)
+  - [Threads](#threads)
 
 <!-- /TOC -->
 
@@ -271,6 +271,7 @@ end
 
 ## Set
 
+
 ## Queue
 
-## 
+## Threads
