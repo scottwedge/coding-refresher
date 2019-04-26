@@ -3,33 +3,16 @@
 ### Arrays
 
 1. Binary search
-    - [recursive solution](ruby/1.1.rb) 
-    - [iterative solution](ruby/1.2.rb)
-
 2. Find maximum in sliding window
-    - [brute force O(n^2)](ruby/2.1.rb)
-    - [ O(n)](ruby/2.2.rb)
-
 3. Find an element in rotated sorted array / shifted array
-    - [linear search O(n)](ruby/3.1.rb)
-    - [iterative modified binary search O(log(n))](ruby/3.2.rb)
-    - [recursive modifed binary search O(log(n))](ruby/3.3.rb)
-    - [find pivot and call binary search O(log(n))](ruby/3.4.rb)
-
 4. Find the least common number in three sorted array
-    - [solution O(a + b + c)](ruby/4.1.rb)
-    - [elegant code of first solution](ruby/4.2.rb)
-
 5. Rotate an array by given N ( N can be positive or negative)
-    - [Reverse and Reverse again](ruby/5.1.rb)
-    - [Using extra array](ruby/5.2.rb)
 6. Find Low/high index of a an element in a sorted array with duplicates
-    - [modified binary search](ruby/6.1.rb)
 7. Move all zeroes in an array to left.
 8. Given a list of day stock prices (integers for simplicity), return the buy and sell prices for making the maximum profit.We need to maximize the single buy/sell profit and in case we can't make any profit, we'll try to minimize the loss. 
-10. Implement QuickSort
-11. Given an array (list) of intervals as input where each interval has a start and end timestamps. Input array is sorted by starting timestamps. You are required to merge overlapping intervals and return output array (list).Consider below input array. Intervals (1, 5), (3, 7), (4, 6), (6, 8) are overlapping so should be merged to one big interval (1, 8). Similarly intervals (10, 12) and (12, 15) are also overlapping intervals and should be merged to (10, 15).
-12. Given an array of integers and a value, determine if there are any two integers in the array which sum equal to the given value.
+9.  Implement QuickSort
+10. Given an array (list) of intervals as input where each interval has a start and end timestamps. Input array is sorted by starting timestamps. You are required to merge overlapping intervals and return output array (list).Consider below input array. Intervals (1, 5), (3, 7), (4, 6), (6, 8) are overlapping so should be merged to one big interval (1, 8). Similarly intervals (10, 12) and (12, 15) are also overlapping intervals and should be merged to (10, 15).
+11. Given an array of integers and a value, determine if there are any two integers in the array which sum equal to the given value.
 
 ### Linked List
 
