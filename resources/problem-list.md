@@ -5,19 +5,20 @@
 - http://web.stanford.edu/class/cs97si/
 
 1. interview bit
-1. code signal
-1. coder byte
-1. geekyprep
-1. hackerrank
-1. hackerearth
-1. codechef
-1. codeforces
-1. top coder
-1. lintcode
-1. [Must do coding questions - company wise](https://www.geeksforgeeks.org/must-coding-questions-company-wise/)
-1. [Must Do Coding Questions for Companies like Amazon, Microsoft, Adobe, …](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/)
-1. [Top 10 algorithms in Interview Questions](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/)
-1. [Top 10 Algorithms and Data Structures for Competitive Programming](https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/)
+2. firecode.io
+3. code signal
+4. coder byte
+5. geekyprep
+6. hackerrank
+7. hackerearth
+8. codechef
+9. codeforces
+10. top coder
+11. lintcode
+12. [Must do coding questions - company wise](https://www.geeksforgeeks.org/must-coding-questions-company-wise/)
+13. [Must Do Coding Questions for Companies like Amazon, Microsoft, Adobe, …](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/)
+14. [Top 10 algorithms in Interview Questions](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/)
+15. [Top 10 Algorithms and Data Structures for Competitive Programming](https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/)
 
 - https://github.com/sagivo/algorithms
 
