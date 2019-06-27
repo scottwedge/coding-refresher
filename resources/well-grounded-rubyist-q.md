@@ -6,33 +6,6 @@
 
 </details>
 
-## Chapter 2
-
-- What is the default object everything belongs to ?
-- Create a new object without a class and add methods to it
-- What are the only two falsy values in Ruby
-- What is interpolation ?
-- What is a BasicObject
-- How do you list all methods belonging to an object in sorted order
-- List 3 useful default methods that belongs to Objects
-- How do you check whether an object has a method ?
-- Compare if two objects refs are same
-- How do you send methods as messages to an Object ?
-- Diff b/n send, __ send__ and public_send
-- Diff b/n parameter vs arguments
-- How to define required argument
-- How to define default argument
-- How to define optional argument
-- What's the only allowed order when using default and optional arguments together
-- There can be atmost how many optional arguments per method
-- Will R/D/R/D work? if not give examples of valid ones
-- What are immediate values in values
-- Why the post and pre increment, decreament operators are not present?
-- How to freeze an Object ?
-- Can contents of frozen objects be modified ?
-- Diff b/n dup vs clone
-- How ruby identifies whether the identifier encountered is a variable, keyword or method ?
-
 ## Chapter 3
 
 - What is a class in ruby ?

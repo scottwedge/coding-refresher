@@ -128,4 +128,19 @@ https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions
 
 # Some one's workflow
 
-https://workflowy.com/s/wGqavcPQFm
+- https://workflowy.com/s/wGqavcPQFm
+- https://medium.com/@jayshah_84248/google-interview-part-1-ed4f25634a81
+- https://medium.com/@jayshah_84248/google-interview-part-2-c5f35633deda
+- https://medium.com/@jayshah_84248/google-interview-part-3-on-site-928b22b51139
+
+
+https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
+http://h5bp.github.io/Front-end-Developer-Interview-Questions/
+http://davidshariff.com/quiz/
+http://thatjsdude.com/interview/index.html
+http://davidshariff.com/js-quiz/
+https://performancejs.com/post/hde6d32/The-Best-Frontend-JavaScript-Interview-Questions-(Written-by-a-Frontend-Engineer
+https://github.com/yangshun/front-end-interview-handbook
+https://github.com/ChiperSoft/InterviewThis
+http://davidshariff.com/blog/preparing-for-a-front-end-web-development-interview-in-2017/
+https://www.interviewcake.com/

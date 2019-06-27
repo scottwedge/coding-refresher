@@ -1,25 +1,3 @@
-## Chapter 1
-## Chapter 2
-
-- Object
-- adding methods to newly created objects
-```
-a = Object.new
-def a.say_hello
-  puts "hello there!!!"
-end
-```
-- only false and nil are the falsy values in ruby. everything else is true.
-- The bare minimal Object with only a few methods.
-- object_name.methods
-- object_id, respond_to?, send or __ send__
-- object_name.respond_to?("message")
-- object_name.send("my_message")
-- object_a.object_id == object_b.object_id
-- send and __send_ _ are essentially same. __send_ _ is defined in order to avoid confusion and name clashes. public_send can only access public methods.
-- parameter is formal way of defining variables that the method will accept during method definition
-- 
-
 ## Chapter 5
 
 ```

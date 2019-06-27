@@ -6,12 +6,27 @@
   - [Truthy and Falsy values](#truthy-and-falsy-values)
   - [Check for null values](#check-for-null-values)
     - [check if variable, method or class is defined](#check-if-variable-method-or-class-is-defined)
-    - [check if a variable has any value](#check-if-a-variable-has-any-value)
+    - [check if variable has any value](#check-if-variable-has-any-value)
+    - [check if string is empty](#check-if-string-is-empty)
     - [check if array is empty](#check-if-array-is-empty)
     - [check if hash is empty](#check-if-hash-is-empty)
   - [Sentinal Values](#sentinal-values)
     - [INFINITY](#infinity)
-  - [String Mutability](#string-mutability)
+    - [convert to 32 bit signed integers](#convert-to-32-bit-signed-integers)
+  - [Strings](#strings)
+    - [String Mutability](#string-mutability)
+    - [Looping Strings](#looping-strings)
+      - [each_char](#eachchar)
+      - [to char array](#to-char-array)
+      - [each_char with_index](#eachchar-withindex)
+    - [Strings and ASCII](#strings-and-ascii)
+      - [convert string to unicode array](#convert-string-to-unicode-array)
+      - [convert char to ascii value](#convert-char-to-ascii-value)
+      - [sum of ascii values of string](#sum-of-ascii-values-of-string)
+      - [ascii to char](#ascii-to-char)
+    - [Useful methods](#useful-methods)
+      - [include?](#include)
+      - [](#)
   - [Conditional Statements](#conditional-statements)
     - [IF..ELSE](#ifelse)
     - [SWITCH](#switch)
@@ -79,7 +94,7 @@ defined? my_val
 # returns local-variable, method or constant
 ```
 
-### check if a variable has any value
+### check if variable has any value
 
 ```ruby
 my_val.nil?
@@ -87,6 +102,16 @@ my_val.nil?
 ```
 
 - since only *nil* and *false* evaluates to false, different object should be checked differently
+
+### check if string is empty
+
+```ruby
+my_val = ""
+my_val.empty?
+# returns true
+```
+
+> NOTE : empty? is not part of Numbers
 
 ### check if array is empty
 
@@ -116,11 +141,106 @@ require "bigdecimal"
 BigDecimal::INFINITY
 ```
 
-## String Mutability
+### convert to 32 bit signed integers
+
+```ruby
+my_num = Array(my_num).pack('l').unpack('l').first
+#   l         | Integer | 32-bit signed, native endian (int32_t)
+#   q         | Integer | 64-bit signed, native endian (int64_t)
+```
+
+## Strings
+
+### String Mutability
 
 - Except Boolean, Numeric, nil, and Symbol all objects are mutable
 - strings are mutable in ruby
 - behaves just like any other object
+
+```ruby
+x = "abc"
+x.object_id
+# 797419909313
+x[0] = "ap"
+x
+# apbc
+x.object_id
+# 797419909313
+```
+
+- the object_id doesn't change
+
+### Looping Strings
+
+#### each_char
+
+```ruby
+s = "abcd"
+s.each_char do |val|
+# use char
+end
+```
+
+#### to char array
+
+```ruby
+s = "abcd"
+s.chars
+# returns ["a", "b", "c", "d"]
+# shortcut for s.each_char.to_a
+```
+
+#### each_char with_index
+
+```ruby
+s = "abcd"
+s.each_char.with_index do |val, index|
+# use char val and index
+end
+```
+
+### Strings and ASCII
+
+#### convert string to unicode array
+
+- returns unicode array (in utf-8 first 127 are same as ascii)
+
+```ruby
+s = "abcd"
+s.codepoints
+# returns array [97, 98, 99, 100]
+```
+
+#### convert char to ascii value
+
+- returns ascii code of first character in a string
+
+```ruby
+s = "a"
+s.ord #=> 97
+s = "abcd"
+s.ord #=> 97
+```
+
+#### sum of ascii values of string
+
+```ruby
+s = "a"
+s.sum #=> 97
+s = "abcd"
+s.sum #=> 394
+```
+
+#### ascii to char
+
+```ruby
+97.chr #=> returns a
+```
+
+### Useful methods
+
+#### include?
+#### 
 
 ## Conditional Statements
 
@@ -263,6 +383,10 @@ end
 ```
 
 ## Hash
+
+```
+Hash.new(default_value)
+```
 
 ### implementation details
 

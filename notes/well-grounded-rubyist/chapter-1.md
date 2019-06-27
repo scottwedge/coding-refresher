@@ -37,20 +37,20 @@
 <details>
 <summary>Answer</summary>
 
-| variable | convention |
-|----------|------------|
-|local     |  first_name  |
-|global    |  $FIRST_NAME, $IDENTIFIER |
-|instance  | @first_name  |
-|class     | @@first_name |
-|constant  | PI, FIRST_NAME, LIMIT |
-|methods   | first_name, first_name=, firstname?, change_first_name! |
-|keywords  | language defined stuff, not under user control |
+| variable | convention                                              |
+| -------- | ------------------------------------------------------- |
+| local    | first_name                                              |
+| global   | $FIRST_NAME, $IDENTIFIER                                |
+| instance | @first_name                                             |
+| class    | @@first_name                                            |
+| constant | PI, FIRST_NAME, LIMIT                                   |
+| methods  | first_name, first_name=, firstname?, change_first_name! |
+| keywords | language defined stuff, not under user control          |
 
 
 </details>
 
-###
+### Objects in Ruby
 
 - *Why are objects important than class ?*
 <details>
@@ -226,11 +226,11 @@ By default the load, require and require_relative searches for the files in load
 <details>
 <summary>Answer</summary>
 
-| way to load file | desc | example |
-|------------------|------|---------|
-|load              | <p>- doesn't load eagerly (i.e) loads only when it sees the load statements</p><p>- (re)loads every time</p><p> - "./" is not needed since load behaves as if "." is included in the load path</p><p> - full file name with extension should be given</p><p> - usually used during development</p>| load "my_file.rb" |
-|require           | <p>- loads eagerly (i.e) loads at the beginning like a feature</p><p> - tracks list of already loaded files and doesn't reload</p><p> - "./" is required, alternative is to add "." to load path array $:.ushift(".")</p><p> - since this loading a feature, file extension is not required, it can load .so and compiled binaries just with name</p><p> - traditional way to require feature</p> | require "./my_file"|
-| require_relative | - same as require but "./" is not needed | require_relative "my_file"|
+| way to load file | desc                                                                                                                                                                                                                                                                                                                                                                                              | example                    |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| load             | <p>- doesn't load eagerly (i.e) loads only when it sees the load statements</p><p>- (re)loads every time</p><p> - "./" is not needed since load behaves as if "." is included in the load path</p><p> - full file name with extension should be given</p><p> - usually used during development</p>                                                                                                | load "my_file.rb"          |
+| require          | <p>- loads eagerly (i.e) loads at the beginning like a feature</p><p> - tracks list of already loaded files and doesn't reload</p><p> - "./" is required, alternative is to add "." to load path array $:.ushift(".")</p><p> - since this loading a feature, file extension is not required, it can load .so and compiled binaries just with name</p><p> - traditional way to require feature</p> | require "./my_file"        |
+| require_relative | - same as require but "./" is not needed                                                                                                                                                                                                                                                                                                                                                          | require_relative "my_file" |
 
 </details>
 
