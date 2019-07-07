@@ -276,6 +276,7 @@ broken_args(10)
 <summary>Answer</summary>
 
 - In ruby even though immediate values mean that they are directly present in the variable itself, it's actually a bit different in how it's present.
+- It would be like re-assigning the value of self. But that is not possible
 - For example, the existence of an integer 100 is always unique no matter how many variables are referencing to it.
 
 ```ruby

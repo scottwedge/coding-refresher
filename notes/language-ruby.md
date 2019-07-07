@@ -1,55 +1,54 @@
 # TOC
 
 <!-- TOC -->
-- [TOC](#toc)
-  - [DataTypes](#datatypes)
-  - [Truthy and Falsy values](#truthy-and-falsy-values)
-  - [Check for null values](#check-for-null-values)
+- [TOC](#TOC)
+  - [DataTypes](#DataTypes)
+  - [Truthy and Falsy values](#Truthy-and-Falsy-values)
+  - [Check for null values](#Check-for-null-values)
     - [check if variable, method or class is defined](#check-if-variable-method-or-class-is-defined)
     - [check if variable has any value](#check-if-variable-has-any-value)
     - [check if string is empty](#check-if-string-is-empty)
     - [check if array is empty](#check-if-array-is-empty)
     - [check if hash is empty](#check-if-hash-is-empty)
-  - [Sentinal Values](#sentinal-values)
-    - [INFINITY](#infinity)
+  - [Sentinal Values](#Sentinal-Values)
+    - [INFINITY](#INFINITY)
     - [convert to 32 bit signed integers](#convert-to-32-bit-signed-integers)
-  - [Strings](#strings)
-    - [String Mutability](#string-mutability)
-    - [Looping Strings](#looping-strings)
+  - [Strings](#Strings)
+    - [String Mutability](#String-Mutability)
+    - [Looping Strings](#Looping-Strings)
       - [each_char](#eachchar)
       - [to char array](#to-char-array)
       - [each_char with_index](#eachchar-withindex)
-    - [Strings and ASCII](#strings-and-ascii)
+    - [Strings and ASCII](#Strings-and-ASCII)
       - [convert string to unicode array](#convert-string-to-unicode-array)
       - [convert char to ascii value](#convert-char-to-ascii-value)
       - [sum of ascii values of string](#sum-of-ascii-values-of-string)
       - [ascii to char](#ascii-to-char)
-    - [Useful methods](#useful-methods)
+    - [Useful methods](#Useful-methods)
       - [include?](#include)
-      - [](#)
-  - [Conditional Statements](#conditional-statements)
-    - [IF..ELSE](#ifelse)
-    - [SWITCH](#switch)
-  - [Loops - Procedural](#loops---procedural)
+  - [Conditional Statements](#Conditional-Statements)
+    - [IF..ELSE](#IFELSE)
+    - [SWITCH](#SWITCH)
+  - [Loops - Procedural](#Loops---Procedural)
     - [while](#while)
-  - [Loops - Functional](#loops---functional)
+  - [Loops - Functional](#Loops---Functional)
     - [map (alias - collect - came from smalltalk)](#map-alias---collect---came-from-smalltalk)
     - [reduce (alias - inject)](#reduce-alias---inject)
     - [find (alias - detect)](#find-alias---detect)
     - [select](#select)
     - [reject](#reject)
-  - [Pass by Value vs Pass by Reference](#pass-by-value-vs-pass-by-reference)
-  - [Scoping](#scoping)
-  - [Arrays](#arrays)
+  - [Pass by Value vs Pass by Reference](#Pass-by-Value-vs-Pass-by-Reference)
+  - [Scoping](#Scoping)
+  - [Arrays](#Arrays)
     - [must know methods](#must-know-methods)
     - [methods and complexities](#methods-and-complexities)
-    - [Filling Arrays with default values](#filling-arrays-with-default-values)
+    - [Filling Arrays with default values](#Filling-Arrays-with-default-values)
     - [each and each_with_index](#each-and-eachwithindex)
-  - [Hash](#hash)
+  - [Hash](#Hash)
     - [implementation details](#implementation-details)
-  - [Set](#set)
-  - [Queue](#queue)
-  - [Threads](#threads)
+  - [Set](#Set)
+  - [Queue](#Queue)
+  - [Threads](#Threads)
 
 <!-- /TOC -->
 
@@ -240,7 +239,6 @@ s.sum #=> 394
 ### Useful methods
 
 #### include?
-#### 
 
 ## Conditional Statements
 
@@ -356,12 +354,12 @@ start_val = 0
 
 ### methods and complexities
 
-|method name | complexity | Why | Source |
-|------------|------------|-----|--------|
-| uniq , uniq! | O(n)     | uses hash internally | |
-| push , pop | O(n)       | amortized | |
-| shift, unshift | O(n)   | amortized | [ref](https://bobhutchison.wordpress.com/2006/09/23/rubys-arrayshift-is-shifty/) |
-| slice, splice |
+| method name    | complexity | Why                  | Source                                                                           |
+| -------------- | ---------- | -------------------- | -------------------------------------------------------------------------------- |
+| uniq , uniq!   | O(n)       | uses hash internally |                                                                                  |
+| push , pop     | O(n)       | amortized            |                                                                                  |
+| shift, unshift | O(n)       | amortized            | [ref](https://bobhutchison.wordpress.com/2006/09/23/rubys-arrayshift-is-shifty/) |
+| slice, splice  |
 
 insert(pos, element1, element2, ...)
 

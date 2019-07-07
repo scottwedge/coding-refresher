@@ -2,7 +2,7 @@
 
 ### Identifiers
 
-- *What's the difference between ruby, Ruby and RUBY ?*
+*What's the difference between ruby, Ruby and RUBY ?*
 <details>
 <summary>Answer</summary>
 
@@ -11,7 +11,7 @@
 - RUBY - This is wrong. It's not an abbreviation like PERL or COBOL
 </details>
 
-- *What are different ruby identifiers ?*
+*What are different ruby identifiers ?*
 <details>
 <summary>Answer</summary>
 
@@ -20,13 +20,13 @@
     - global
     - instance
     - class
-1. constants
-1. methods
-1. keywords
+2. constants
+3. methods
+4. keywords
 
 </details>
 
-- *list standard ruby conventions for naming*
+*list standard ruby conventions for naming*
     - *local variable*
     - *global variable*
     - *instance variable*
@@ -52,14 +52,14 @@
 
 ### Objects in Ruby
 
-- *Why are objects important than class ?*
+*Why are objects important than class ?*
 <details>
 <summary>Answer</summary>
 Once an Object is instantiated (crated) through a class, the Object becomes independent of the class. Even though the class gave the object it's initial behaviors and states, the Object can behave differently.
 
 </details>
 
-- *message passing vs methods calling*
+*message passing vs methods calling*
 <details>
 <summary>Answer</summary>
 
@@ -68,7 +68,7 @@ Once an Object is instantiated (crated) through a class, the Object becomes inde
 
 </details>
 
-- *what's the default object in ruby*
+*what's the default object in ruby*
 <details>
 <summary>Answer</summary>
 - self - it changes depending on the run time context
@@ -77,7 +77,7 @@ Once an Object is instantiated (crated) through a class, the Object becomes inde
 
 ### IO and basics
 
-- *puts vs print vs p*
+*puts vs print vs p*
 <details>
 <summary>Answer</summary>
 
@@ -87,26 +87,7 @@ Once an Object is instantiated (crated) through a class, the Object becomes inde
 
 </details>
 
-- *how to check for syntax?*
-<details>
-<summary>Answer</summary>
-
-```ruby
-ruby -cw file_name.rb
-# Syntax OK
-```
-</details>
-
-- *How to start irb with out line numbers*
-<details>
-<summary>Answer</summary>
-
-```
-irb --simple-prompt
-```
-</details>
-
-- *How to get input from stream or user ?*
+*How to get input from stream or user ?*
 <details>
 <summary>Answer</summary>
 
@@ -117,35 +98,49 @@ print my_val
 ```
 </details>
 
-- chop vs chomp vs strip
+*chop vs chomp vs strip*
 <details>
 <summary>Answer</summary>
 
-- chop - snip last character
-- chomp - remove line seperator at the end
+- chop - delete last character
+- chomp - remove line separator at the end of a string **once**
 - strip - remove all surrounding whitespace
 </details>
 
-- *How to print output ?*
-- *How to read a file ?*
+*How to print output ?*
+*How to read a file ?*
+<details>
+<summary>Answer</summary>
+
+```ruby
+File.read("path_to_file")
+```
+
+</details>
 
 ### Ruby installation dir structure
 
-- *what is the library that should be required for getting the install path info*
+*what is the library that should be required for getting the install path info*
 <details>
 <summary>Answer</summary>
 
 rbconfig
+
+```ruby
+require "rbconfig"
+RbConfig
+```
+
 </details>
 
-- *what is the constant where config paths is present*
+*what is the constant where config paths is present*
 <details>
 <summary>Answer</summary>
 
 *RbConfig::CONFIG*
 </details>
 
-- *what are the main installation directory folders and it's corresponding keys on the config path hash*
+*what are the main installation directory folders and it's corresponding keys on the config path hash*
 <details>
 <summary>Answer</summary>
 
@@ -178,16 +173,17 @@ installation dir
 
 </details>
 
-- *What's the difference between sitedir and vendordir ?*
+*What's the difference between sitedir and vendordir ?*
 <details>
 <summary>Answer</summary>
+
 - sitedir - system administrator or side admin stores the 3rd librarires there
 - vendorlib - a recently introduced folder for storing third party libraries.
 </details>
 
 ### load, require , relative_require
 
-- *what's the difference b/n feature, extension and library*
+*what's the difference b/n feature, extension and library*
 <details>
 <summary>Answer</summary>
 
@@ -196,7 +192,7 @@ installation dir
 - extension - more of a library written in C for ruby
 </details>
 
-- *what is the global variable that contains the load paths*
+*what is the global variable that contains the load paths*
 <details>
 <summary>Answer</summary>
 
@@ -215,14 +211,14 @@ ruby -e "puts $:"
 - require_relative
 </details>
 
-- *what's the use of load path*
+*what's the use of load path*
 <details>
 <summary>Answer</summary>
 
 By default the load, require and require_relative searches for the files in load path if the file is not found in the current directory
 </details>
 
-- *what's the difference between three ways of loading files?*
+*what's the difference between three ways of loading files?*
 <details>
 <summary>Answer</summary>
 
@@ -234,14 +230,14 @@ By default the load, require and require_relative searches for the files in load
 
 </details>
 
-- *Where does the Did you mean? message and method suggestions come from*
+*Where does the __"Did you mean?"__ message and method suggestions come from*
 <details>
 <summary>Answer</summary>
 
 From the gem did_you_mean which is included in the language by default 
 </details>
 
-- *How require keeps track of the loaded files ?*
+*How require keeps track of the loaded files ?*
 <details>
 <summary>Answer</summary>
 
@@ -250,14 +246,14 @@ From the gem did_you_mean which is included in the language by default
 
 ### Tools
 
-- *Where to check the default out of the box ruby tools?*
+*Where to check the default out of the box ruby tools?*
 <details>
 <summary>Answer</summary>
 
 whatever is present in the *RbConfig::CONFIG["bindir"]*
 </details>
 
-- *How many out of the box ruby tools are there ?*
+*How many out of the box ruby tools are there ?*
 <details>
 <summary>Answer</summary>
 
@@ -278,14 +274,14 @@ whatever is present in the *RbConfig::CONFIG["bindir"]*
 
 #### ruby interpreter command line switches
 
-- *How to check for all the available options?*
+*How to check for all the available options?*
 <details>
 <summary>Answer</summary>
 
 - h
 </details>
 
-- *How run a ruby program inline in command prompt ?*
+*How to run a ruby program inline in command prompt ?*
 <details>
 <summary>Answer</summary>
 
@@ -294,7 +290,7 @@ ruby -e "puts 'this is an inline ruby program'"
 ```
 </details>
 
-- *How to check syntax of a ruby program ?*
+*How to check syntax of a ruby program ?*
 <details>
 <summary>Answer</summary>
 
@@ -312,7 +308,7 @@ ruby -w file_name.rb
 ```
 </details>
 
-- *What's the difference between -v and --version *
+*What's the difference between -v and --version *
 
 <details>
 <summary>Answer</summary>
@@ -323,7 +319,7 @@ ruby -w file_name.rb
 
 #### irb
 
-- *How to start irb without line numbers*
+*How to start irb without line numbers*
 <details>
 <summary>Answer</summary>
 
@@ -332,7 +328,7 @@ irb --simple-prompt
 ```
 </details>
 
-- *How to load a library into irb with command line switches?*
+*How to load a library into irb with command line switches?*
 <details>
 <summary>Answer</summary>
 
@@ -341,7 +337,7 @@ irb -r rbconfig
 ```
 </details>
 
-- *How to turn off echo in irb ?*
+*How to turn off echo in irb ?*
 <details>
 <summary>Answer</summary>
 
@@ -352,10 +348,9 @@ irb --no-echo
 
 #### rake
 
-- *Write a task with two namespaces, admin - to clear /tmp directory, and user - to clear tmp directory in home folder with clear descriptions for each task*
+*Write a task with two namespaces, admin - to clear /tmp directory, and user - to clear tmp directory in home folder with clear descriptions for each task*
 <details>
 <summary>Answer</summary>
-
 
 ```
 namespace :admin do
@@ -374,7 +369,7 @@ end
 ```
 </details>
 
-- *Call the rake task for admin to clear tmp*
+*Call the rake task for admin to clear tmp*
 <details>
 <summary>Answer</summary>
 
@@ -383,7 +378,7 @@ rake admin:clean
 ```
 </details>
 
-- *How to list all tasks in current dir*
+*How to list all tasks in current dir*
 <details>
 <summary>Answer</summary>
 
@@ -394,14 +389,14 @@ rake --tasks
 
 #### gem
 
-- *Where does the installed gem go?*
+*Where does the installed gem go?*
 <details>
 <summary>Answer</summary>
 
 gems folder present at the same level as site_ruby and vendor_ruby
 </details>
 
-- *How to install a gem*
+*How to install a gem*
 <details>
 <summary>Answer</summary>
 
