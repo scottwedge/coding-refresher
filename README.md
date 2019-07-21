@@ -2,6 +2,12 @@
 
 This repo is made for staying in touch with coding and be ready to solve coding problems any time, anywhere.
 
+## General rules of coding
+
+> When there is choice between simple and obfuscated code, always go for the simpler one unless the other has performance or memory advantages
+
+> Code is for other humans to read not for the machines.
+
 ## Language Specific gotchas
 
 1. Choose a language of your choice.

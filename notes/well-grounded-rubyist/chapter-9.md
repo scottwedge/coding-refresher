@@ -1,37 +1,189 @@
 # Chapter 9 (Array, Hash, Set, Range)
 
-- print all hash elements with its index
+*print all hash elements with its index*
+<details>
+<summary>Answer</summary>
+
+```ruby
+my_hash = {key1: "value 1", key2: "value 2"}
+my_hash.each_with_index do |(key, val), index|
+    puts "#{key} => #{val} at index #{index}"
+end
+```
+
+</details>
+
 **Arrays**
-- creating
-    - using new
-        - use new to create an array with size 10 and with each element initialzed to "hi"
-        - when I modify the string object "hi" at position 0 what happens ?
-        - How to initialize array with each index having it's own object instead of same object reference
-    - Define a method on String class so that string gets converted to array of characters
-    - using []
-    - what does %w{} do  ?
-    - create an array of single quoted string
-    - created an array of double quoted string
-    - create an array of symbols - single quoted
-    - create an array of symbols - double quoted
-    - what does try_convert method do ?
-        - what are the classes that has this defined ?
-            (string, array, hash, io, regexp)
-- Array Operations (single element, multiple elements)
-    - insert at beginning
-    - delete at begining
-    - insert at end 
-    - delete at end
-    - concatenate another array
-        - how is it different from +
-    - replace
-- Array Transformations
-    - make the array single dimension
-    - reverse the contents of the array
-    - join - what's the alias operator for join method
-    - remove duplicates from an array
-    - remove nil elements from array
-    - convert array to hash
+
+*Using new - create an array with size 10 and with each element initialzed to "hi"
+<details>
+<summary>Answer</summary>
+
+```ruby
+a = Array.new(10, "hi")
+```
+
+</details>
+
+*when I modify the string object "hi" at position 0 what happens ?*
+
+<details>
+<summary>Answer</summary>
+
+- It changes all the other strings since they are all just references to the same object
+
+```ruby
+a = Array.new(10, "hi")
+a[0][0] = "Yo"
+p a
+# ["Yoi", "Yoi", "Yoi", "Yoi", "Yoi", "Yoi", "Yoi", "Yoi", "Yoi", "Yoi"]
+```
+
+</details>
+
+
+*How to initialize array with each index having it's own object instead of same object reference*
+<details>
+<summary>Answer</summary>
+
+- Pass a code block which will return a new string object
+
+```ruby
+a = Array.new(10) {"hi"}
+a[0][0] = "Yo"
+p a
+# ["Yoi", "hi", "hi", "hi", "hi", "hi", "hi", "hi", "hi", "hi"]
+```
+
+</details>
+
+*Define a method on String class so that string gets converted to array of characters*
+<details>
+<summary>Answer</summary>
+
+```ruby
+class String
+    def to_a
+        split(//)
+    end
+end
+"abcd".to_a
+["a", "b", "c", "d"]
+```
+
+</details>
+
+*create an array using []*
+
+<details>
+<summary>Answer</summary>
+
+```ruby
+my_array = [1, 2, "yo"]
+```
+
+</details>
+
+*create an array of single quoted string using %char notation*
+<details>
+<summary>Answer</summary>
+
+- %w()
+
+```ruby
+a = %w{this is an array of words in single quoted string}
+# ["this", "is", "an", "array", "of", "words"]
+```
+
+</details>
+
+*created an array of double quoted string*
+<details>
+<summary>Answer</summary>
+
+- %W()
+
+```ruby
+a = %W(double quoted string array so interpolation like #{23 + 30} works)
+#  => ["double", "quoted", "string", "array", "so", "interpolation", "like", "53", "works"]
+```
+
+</details>
+
+*create an array of symbols - single quoted*
+<details>
+<summary>Answer</summary>
+
+- %i
+
+```ruby
+a = %i(this symbol array)
+#  => [:this, :symbol, :array]
+```
+
+</details>
+
+*create an array of symbols - double quoted*
+<details>
+<summary>Answer</summary>
+
+- %I
+
+```ruby
+name = "David"
+a = %i(interpolated name #{name})
+#  => [:interpolated, :name, :David]
+```
+
+</details>
+
+*what does try_convert method do ?*
+<details>
+<summary>Answer</summary>
+
+- try_convert tries to convert the given object to the called class type. If it is able to convert it will written the converted type otherwise nil.
+
+```ruby
+obj = Object.new
+Array.try_convert(obj)
+# => nil
+
+def obj.to_ary
+  [1,2,3]
+end
+
+Array.try_convert(obj)
+# [1,2,3]
+```
+
+</details>
+
+*what are the classes that has try_convert defined ?*
+<details>
+<summary>Answer</summary>
+
+- String
+- Array
+- Hash
+- IO
+- RegExp
+
+</details>
+
+
+- insert at beginning(single element and multiple element)
+- delete at begining(single element and multiple element)
+- insert at end (single element and multiple element)
+- delete at end(single element and multiple element)
+- concatenate another array
+- how concatenate is different from + ?
+- replace
+- make the array single dimension
+- reverse the contents of the array
+- join - what's the alias operator for join method
+- remove duplicates from an array
+- remove nil elements from array
+- convert array to hash
 - Querying
     - get the size of the array
     - find out if its empty

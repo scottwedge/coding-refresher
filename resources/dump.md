@@ -144,3 +144,48 @@ https://github.com/yangshun/front-end-interview-handbook
 https://github.com/ChiperSoft/InterviewThis
 http://davidshariff.com/blog/preparing-for-a-front-end-web-development-interview-in-2017/
 https://www.interviewcake.com/
+
+
+
+Data etructure
+Primitive types
+Arrays
+Strings
+Lists
+Stacks and queues
+Binary trees
+Hash tables
+Heaps
+Table 1.3: Data structures
+Key polnts
+Know how int, char, double, etc. are represented in memory
+and the primitive operations on them.
+Fast access for element at an index, slow lookups (unless sorted)
+and insertions. Be comfortable with notions of iteration, resizing,
+partitioning, merging, etc.
+Know how strings are represented in memory. Understand
+basic operators such as comparison, copying, matching, joining,
+splitting, etc.
+Understand trade-offs with respect to arrays. Be comfortable
+with iteration, insertion, and deletion within singly and doubly
+linked lists. Know how to implement a list with dyramic
+allocation, and with arrays.
+Recognize where last-in first-out (stack) and first-in first-out
+(queue) semantics are applicable. Know array and linked list
+implementations.
+Use for representing hierarchical data. Know about depth,
+height, leaves, search path, traversal sequences, successor/predecessor
+operations.
+Key benefit: O(1) lookup find-max, O(logn) insertion, and
+O(logn) deletion of max. Node and array representations. Minheap
+variant.
+Key benefit: O(1) insertions, deletions and lookups. Key disadvantages:
+not suitable for order-related queries; need for resizing;
+poor worst-case performance. Understand implementation
+using array of buckets and collision chains. Know hash functions
+for integers, strings, objects.
+Key benefit: O(logn) insertions, deletions, lookups, find-min,
+find-max, successor, predecessor when tree is height-balanced.
+Understand node fields, pointer implementation. Be familiar
+with notion of balance, and operations maintainingbalance.
+Binary search trees
