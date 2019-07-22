@@ -170,20 +170,123 @@ Array.try_convert(obj)
 
 </details>
 
+*insert at beginning(single element and multiple element)*
+<details>
+<summary>Answer</summary>
 
-- insert at beginning(single element and multiple element)
-- delete at begining(single element and multiple element)
-- insert at end (single element and multiple element)
-- delete at end(single element and multiple element)
-- concatenate another array
-- how concatenate is different from + ?
-- replace
-- make the array single dimension
-- reverse the contents of the array
-- join - what's the alias operator for join method
-- remove duplicates from an array
-- remove nil elements from array
-- convert array to hash
+```ruby
+```
+
+</details>
+
+*delete at begining(single element and multiple element)*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*insert at end (single element and multiple element)*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*delete at end(single element and multiple element)*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*concatenate another array*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*how concatenate is different from + ?*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*replace*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*make the array single dimension*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*reverse the contents of the array*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*join - what's the alias operator for join method*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*remove duplicates from an array*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*remove nil elements from array*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
+*convert array to hash*
+<details>
+<summary>Answer</summary>
+
+```ruby
+```
+
+</details>
+
 - Querying
     - get the size of the array
     - find out if its empty

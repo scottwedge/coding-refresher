@@ -3,12 +3,6 @@
 <details>
 <summary>Answer</summary>
 
-
-</details>
-
-<details>
-<summary>Answer</summary>
-
 ```ruby
 ```
 
