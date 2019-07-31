@@ -41,7 +41,6 @@ p a
 
 </details>
 
-
 *How to initialize array with each index having it's own object instead of same object reference*
 <details>
 <summary>Answer</summary>
@@ -131,7 +130,7 @@ a = %i(this symbol array)
 
 ```ruby
 name = "David"
-a = %i(interpolated name #{name})
+a = %I(interpolated name #{name})
 #  => [:interpolated, :name, :David]
 ```
 
@@ -170,11 +169,16 @@ Array.try_convert(obj)
 
 </details>
 
-*insert at beginning(single element and multiple element)*
+*insert at beginning of array(single element and multiple element)*
 <details>
 <summary>Answer</summary>
 
 ```ruby
+arr = [1,2]
+arr.unshift(100)
+# [100, 1, 2]
+arr.unshift(111,222,333)
+# [111, 222, 333, 100, 1, 2]
 ```
 
 </details>
@@ -184,6 +188,13 @@ Array.try_convert(obj)
 <summary>Answer</summary>
 
 ```ruby
+arr = [10,20,30,40]
+arr.shift
+# 10
+# arr -> [20, 30, 40]
+arr.shift(2)
+# [20, 30]
+# arr -> [40]
 ```
 
 </details>
@@ -193,6 +204,11 @@ Array.try_convert(obj)
 <summary>Answer</summary>
 
 ```ruby
+arr = [11, 22]
+arr.push(33)
+# [11, 22, 33]
+arr.push(44, 55, 66)
+# => [11, 22, 33, 44, 55, 66]
 ```
 
 </details>
@@ -202,25 +218,37 @@ Array.try_convert(obj)
 <summary>Answer</summary>
 
 ```ruby
+arr = [100, 200, 300, 400, 500, 600, 777, 888]
+arr.pop
+#  => 888
+arr.pop(3)
+#  => [500, 600, 777]
+arr
+#  => [100, 200, 300, 400]
 ```
 
 </details>
 
-*concatenate another array*
+*concatenate another array to the current array*
 <details>
 <summary>Answer</summary>
 
 ```ruby
+arr = %w( apple orange)
+arr2 = [1,2]
+arr.concat(arr2)
+p arr
+# ["apple", "orange", 1, 2]
 ```
 
 </details>
 
-*how concatenate is different from + ?*
+*how concat is different from + ?*
 <details>
 <summary>Answer</summary>
 
-```ruby
-```
+- "+" creates a new array
+- concat appends it to the existing array
 
 </details>
 
@@ -228,7 +256,14 @@ Array.try_convert(obj)
 <details>
 <summary>Answer</summary>
 
+- replaces the current array elements with the new array supplied.
+- the object reference remains the same but the original array is replaced
+
 ```ruby
+arr = [1,2,3]
+arr.replace([4,5,6])
+p arr
+# [4,5,6]
 ```
 
 </details>
@@ -237,7 +272,18 @@ Array.try_convert(obj)
 <details>
 <summary>Answer</summary>
 
+- flatten creates a new flattened array
+- flatten! modifies the original array
+
 ```ruby
+array = [1,2,[3,4,[5],[6,[7,8]]]]
+# [1, 2, [3, 4, [5], [6, [7, 8]]]]
+array.flatten
+# [1, 2, 3, 4, 5, 6, 7, 8]
+array.flatten(1)
+# [1, 2, 3, 4, [5], [6, [7, 8]]]
+array.flatten(2)
+# [1, 2, 3, 4, 5, 6, [7, 8]]
 ```
 
 </details>
@@ -246,8 +292,8 @@ Array.try_convert(obj)
 <details>
 <summary>Answer</summary>
 
-```ruby
-```
+- reverse
+- reverse!
 
 </details>
 
@@ -255,7 +301,15 @@ Array.try_convert(obj)
 <details>
 <summary>Answer</summary>
 
+- join creates a string out of array.
+- "*" is an alias
+
 ```ruby
+arr = %w(this is an array of words)
+arr.join("-")
+# "this-is-an-array-of-words"
+arr * "---"
+# "this---is---an---array---of---words"
 ```
 
 </details>
@@ -264,8 +318,8 @@ Array.try_convert(obj)
 <details>
 <summary>Answer</summary>
 
-```ruby
-```
+- arr.uniq - creates a new array with out duplicates
+- arr.uniq! - modifies the original array
 
 </details>
 
@@ -273,43 +327,239 @@ Array.try_convert(obj)
 <details>
 <summary>Answer</summary>
 
-```ruby
-```
+- compact
+- compact!
 
 </details>
 
-*convert array to hash*
+### Querying
+
+*get the size of the array*
+<details>
+<summary>Answer</summary>
+
+- arr.size
+- arr.length
+
+</details>
+
+*find out if its empty*
 <details>
 <summary>Answer</summary>
 
 ```ruby
+arr.empty?
 ```
 
 </details>
 
-- Querying
-    - get the size of the array
-    - find out if its empty
-    - find out if an element is present in the array
-    - count the number of occurences of an element
-    - get the first element. also first n elements
-    - get the last element. also last n elements
-**Hash**
-- creation
-    - using literals
-    - using new
-        - set default values for new values
-        - passing block to set default value
-    - using hash method
-        - how does it work
-- Operations
-    - insert new element
-    - alias method for inserting
-    - retrieve stored element
-    - alias for retreival method
-        - retrieve multiple values
-    - add another hash on to the current hash
-        - return new hash instead of modifying the existing one
+*find out if an element is present in the array*
+<details>
+<summary>Answer</summary>
+
+```ruby
+arr.include?(item)
+```
+
+</details>
+
+*count the number of occurences of an element*
+<details>
+<summary>Answer</summary>
+
+```ruby
+arr.count(item)
+```
+
+</details>
+
+*get the first element. also first n elements*
+<details>
+<summary>Answer</summary>
+
+```ruby
+arr = [1,2,3,4,5]
+#  => [1, 2, 3, 4, 5]
+arr.first
+#  => 1
+arr.first(3)
+#  => [1, 2, 3]
+```
+
+</details>
+
+*get the last element. also last n elements*
+<details>
+<summary>Answer</summary>
+
+```ruby
+arr = [1,2,3,4,5]
+#  => [1, 2, 3, 4, 5]
+arr.last
+#  => 5
+arr.last(3)
+#  => [3, 4, 5]
+```
+
+</details>
+
+## Hash
+
+*using literals*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h = {}
+```
+
+</details>
+
+*using new*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h = Hash.new
+```
+
+</details>
+
+*set default values for values not found in hash*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h = Hash.new(0)
+puts h["apple"]
+# 0
+```
+
+</details>
+
+*using Hash class method []*
+<details>
+<summary>Answer</summary>
+
+- it accepts comma separated values in even numbers. odd numbers will throw error
+- it also accepts any object with to_hash method defined
+
+```ruby
+Hash[ "key1", "val1", "key2", "val2"]
+#  => {"key1"=>"val1", "key2"=>"val2"}
+Hash[ [["key1", "val1"], ["key2", "val2"]] ]
+# => {"key1"=>"val1", "key2"=>"val2"}
+```
+
+</details>
+
+*using Hash method*
+<details>
+<summary>Answer</summary>
+
+- Hash [] -> creates empty hash
+- Hash nil -> creates empty hash
+- Hash also accpets any object with to_hash method defined
+- not to_h but to_hash method
+
+</details>
+
+
+*insert new element*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h = {}
+h["NY"] = "New York"
+# "New York"
+p h
+# => {"NY"=>"New York"}
+```
+
+</details>
+
+*alias method for inserting*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h = {}
+h.store("key1", "value1")
+# "value1"
+p h
+# {"key1"=>"value1"}
+```
+
+</details>
+
+*retrieve a stored element*
+<details>
+<summary>Answer</summary>
+
+- returns nil by default if not found
+
+```ruby
+h["key1"]
+# "value1"
+```
+
+</details>
+
+*alias for retreival method*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h.fetch("key1")
+```
+
+</details>
+
+*what happends if the key looked up is not present in hash throug the alias method*
+<details>
+<summary>Answer</summary>
+
+- fetch raises exception if the looked up key is not found
+
+</details>
+
+*when retreiving a stored value, return a default value dynamically if not found*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h.fetch("mykey", "Key not found")
+```
+
+</details>
+
+*retrieve multiple values as an array*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h = {"key1"=>"value1", "key2"=>"val2"}
+h.values_at("key1", "mykey", "key2")
+# [ "value1", nil, "val2"]
+```
+</details>
+
+*when a key is not found in hash, make it so that the key is added to the hash with default value.*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h = Hash.new {|hash, key| hash[key] = 0}
+h["apples"]
+p h
+# { "apples" => 0}
+```
+
+</details>
+
+- add another hash on to the current hash
+    - return new hash instead of modifying the existing one
 - Transformations
     - select
     - reject
