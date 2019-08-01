@@ -437,7 +437,7 @@ puts h["apple"]
 
 </details>
 
-*using Hash class method []*
+*using class method [] on Hash*
 <details>
 <summary>Answer</summary>
 
@@ -516,7 +516,7 @@ h.fetch("key1")
 
 </details>
 
-*what happends if the key looked up is not present in hash throug the alias method*
+*what happens if the key looked up is not present in hash through the alias method*
 <details>
 <summary>Answer</summary>
 
@@ -524,7 +524,7 @@ h.fetch("key1")
 
 </details>
 
-*when retreiving a stored value, return a default value dynamically if not found*
+*when retrieving a stored value, return a default value dynamically if not found*
 <details>
 <summary>Answer</summary>
 
@@ -534,7 +534,7 @@ h.fetch("mykey", "Key not found")
 
 </details>
 
-*retrieve multiple values as an array*
+*retrieve multiple values of keys as an array from a hash*
 <details>
 <summary>Answer</summary>
 
@@ -558,67 +558,417 @@ p h
 
 </details>
 
-- add another hash on to the current hash
-    - return new hash instead of modifying the existing one
-- Transformations
-    - select
-    - reject
-    - clear
-    - replace
-    - invert
-- Querying
-    - check if a key is present
-        - what are the aliases of that method (include, key, member)
-    - check if a value is present
-    - check if it is empty
-    - get the size of current hash
-- As method arguments
-    - how do methods work if the last argument is a hash
-    - how do methods work if the first argument is a hash
+*merge another hash on to the current hash*
+<details>
+<summary>Answer</summary>
 
-**Named Arguments**
+- merge - replaces value of keys in hash 1 from hash 2 and returns the newly formed hash
+- merge! - replaces the values in existing hash
 
-- def m (a, b, c, *d, p: "Mars", q:, **r )
-    - explain what each argument is
+```ruby
+h1 = { "Key1" => "Value1", "Key2" => "Value2" }
+h2 = { "Key2" => "modified value 2", "key3" => "value3"}
+updated_hash = h1.merge(h2)
+h1.merge!(h2)
+```
 
-**Range**
+</details>
 
-- creation
-    - literal syntax
-    - new
-    - exclusion
-- Querying
-    - get the start element
-    - get then last element
-    - check if the last element is included or excluded
-    - check if an element is prsenent with in the range
-    - how does cover? work
+### Hash Transformations
 
-**Collection**
+*select keys or values satisfying the given condition*
+<details>
+<summary>Answer</summary>
 
-- What Object can be called as a collection
+- select
+- select!
+
+```ruby
+h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine', 12 => 'dodecine'}
+h.select { |key, val| key.to_i == 0 }
+# => {"dog"=>"canine", "cat"=>"feline", "donkey"=>"asinine"}
+```
+
+</details>
+
+*remove all the keys that are not satisfying a given condition*
+<details>
+<summary>Answer</summary>
+
+- reject
+- reject!
+
+```ruby
+h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine', 12 => 'dodecine'}
+h.reject { |key, val| key.to_i == 0 }
+# => {12=>"dodecine"}
+```
+
+</details>
+
+*empty all contents of a hash*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine', 12 => 'dodecine'}
+h.clear
+# {}
+p h
+# {}
+```
+
+</details>
+
+*replace the hash with a new hash*
+<details>
+<summary>Answer</summary>
+
+```ruby
+h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine'}
+h.replace({'swan' => 'bird', 'dog' => 'animal'})
+p h
+# {"swan"=>"bird", "dog"=>"animal"}
+```
+
+</details>
+
+*swap key and value in a hash*
+<details>
+<summary>Answer</summary>
+
+- invert - if there are duplicate values the last key is taken as value
+
+```ruby
+h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine', 'lion' => 'feline'}
+inverted_hash = h.invert
+# {"canine"=>"dog", "feline"=>"lion", "asinine"=>"donkey"}
+```
+
+</details>
+
+### Hash - Querying
+
+*method to check if a key is present*
+<details>
+<summary>Answer</summary>
+
+- has_key?
+- include?
+- key?
+- member?
+
+</details>
+
+*method to check if a value is present*
+<details>
+<summary>Answer</summary>
+
+- has_value?
+- value?
+
+</details>
+
+*check if it is empty*
+<details>
+<summary>Answer</summary>
+
+- my_hash.empty?
+
+</details>
+
+*get the size of current hash*
+<details>
+<summary>Answer</summary>
+
+- my_hash.size
+
+</details>
+
+*how do methods work if the last argument is a hash*
+
+<details>
+<summary>Answer</summary>
+
+- the curly braces can be ignored
+
+```ruby
+def add_to_city_database(name, info)
+    c = City.new
+    c.name = name
+    c.state = info[:state]
+    c.population = info[:population]
+    # ...
+end
+
+add_to_city_database("New York City",
+    state: "New York",
+    population: 7000000,
+    nickname: "Big Apple"
+)
+```
+
+</details>
+
+*how do methods work if the first argument is a hash*
+<details>
+<summary>Answer</summary>
+
+- if the first argument is a hash, ruby will think it is a code block and throw error
+- so it should always be called with parenthesis. my_method({'key' => 'val}, arg2, ...)
+
+</details>
+
+
+## Named Arguments
+
+*def m(x, y, *z, a: 1, b:, **c, &block) .explain what each argument is*
+
+<details>
+<summary>Answer</summary>
+
+- x - required argument
+- y - required argument
+- *z - gobbles up all the other parameters before named parameters
+- a - named parameter with default value (optional)
+- b - required named parameter
+- c - gobbles up all the other named parameters
+- block - any code block passed
+
+</details>
+
+## Range
+
+### Range - creation
+
+*literal syntax*
+<details>
+<summary>Answer</summary>
+
+```ruby
+my_range = 10..100
+my_range2 = 10.1..12.0
+```
+
+</details>
+
+*new*
+<details>
+<summary>Answer</summary>
+
+```ruby
+Range.new(10,100)
+Range.new(10.1,11)
+```
+
+</details>
+
+*exclusion*
+<details>
+<summary>Answer</summary>
+
+```ruby
+10...20
+# 20 is not included in the range
+Range.new(10,20,true)
+```
+
+</details>
+
+### Range Querying
+
+*get the start element*
+<details>
+<summary>Answer</summary>
+
+```ruby
+my_range = 10..20
+my_range.first
+my_range.begin
+```
+
+</details>
+
+*get then last element*
+<details>
+<summary>Answer</summary>
+
+```ruby
+my_range = 10..20
+my_range.last
+my_range.end
+```
+
+</details>
+
+*check if the range is inclusive or exclusive*
+<details>
+<summary>Answer</summary>
+
+```ruby
+my_range = 10..20
+my_range.exclude_end?
+# false
+my_range1 = 10...20
+my_range1.exclude_end?
+# true
+```
+
+</details>
+
+*check if an element is present with in the range*
+<details>
+<summary>Answer</summary>
+
+```ruby
+my_range = 10...20
+my_range.include?(15)
+# true
+```
+
+</details>
+
+*how does cover? work*
+<details>
+<summary>Answer</summary>
+
+- if the argument to the method is greater
+than the range’s start point and less than its end point (or equal to it, for an inclusive
+range), then the range is said to cover the object
+
+```ruby
+r = "a".."z"
+# => "a".."z"
+r.cover?("a")
+# => true
+r.cover?("abc")
+# => true
+r.cover?("A")
+# => false
+```
+
+</details>
 
 **Set**
 
-- How to make set available for usage
-- How does it maintain uniqueness internally
-- Creation
-    - Create a set
-    - Create a set from an array
-    - from a hash
-    - pass a code block with array creation
-- insert/deletereject
+*How to make set available for usage*
+<details>
+<summary>Answer</summary>
 
-    - how to insert via <<
-    - what's the method alias for inserting
-    - how to delete
-        - what happens if the element is not present
-    - what's the difference between add and add?
-- Operations (what operator)
-    - intersection
-    - union
-    - difference
-    - exlusive union - only elements present either in a or b but not on both
-    - merge via method
-- subset and superset methods
+```ruby
+require "set"
+```
 
+</details>
+
+*How does it maintain uniqueness internally*
+<details>
+<summary>Answer</summary>
+
+- It uses a hash internally
+
+</details>
+
+### Creation
+
+*Create a set*
+<details>
+<summary>Answer</summary>
+
+- accepts any object that has each or each_entry method
+
+```ruby
+a = Set.new([1,2,3])
+```
+
+</details>
+
+*create a set by passing a code block to the constructor*
+
+<details>
+<summary>Answer</summary>
+
+```ruby
+require "set"
+names = ["David", "Yukihiro", "Chad", "Amy"]
+#=> ["David", "Yukihiro", "Chad", "Amy"] -->
+name_set = Set.new(names) {|name| name.upcase }
+# => #<Set: {"AMY", "YUKIHIRO", "CHAD", "DAVID"}>
+```
+
+</details>
+
+*create set from a hash*
+<details>
+<summary>Answer</summary>
+
+```ruby
+require "set"
+h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine', 12 => 'dodecine'}
+Set.new(h)
+#  => #<Set: {["dog", "canine"], ["cat", "feline"], ["donkey", "asinine"], [12, "dodecine"]}>
+Set.new(h) {|key, val| val.capitalize}
+# => #<Set: {"Canine", "Feline", "Asinine", "Dodecine"}>
+```
+
+</details>
+
+*insert an element to set*
+<details>
+<summary>Answer</summary>
+
+```ruby
+require "set"
+s = Set.new
+# => #<Set: {}>
+s << "apple"
+#<Set: {"apple"}>
+```
+
+</details>
+
+*what's the method alias for inserting*
+<details>
+<summary>Answer</summary>
+
+- add
+
+</details>
+
+*how to delete*
+<details>
+<summary>Answer</summary>
+
+- my_set.delete(element)
+
+</details>
+
+*what happens when the element deleted is not present*
+<details>
+<summary>Answer</summary>
+
+- it doesn't raise any error like the << method
+
+</details>
+
+*what's the difference between add and add?*
+<details>
+<summary>Answer</summary>
+
+- add always returns the set if the element is getting added or not
+- add? will return nil if the element is not added
+
+</details>
+
+*what are the operations supported between two sets*
+<details>
+<summary>Answer</summary>
+
+- intersection => &
+- union => |
+- difference => -
+- exlusive union => ^
+- subset
+- superset
+
+</details>
