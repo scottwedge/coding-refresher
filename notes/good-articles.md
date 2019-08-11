@@ -5,3 +5,5 @@
 - https://cs.stackexchange.com/questions/10360/floyds-cycle-detection-algorithm-determining-the-starting-point-of-cycle
 - https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len!
 - https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
+- https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html#preface
+- https://decuqa.tumblr.com/post/140681253001/subsets-vs-permutations-survival-guide
