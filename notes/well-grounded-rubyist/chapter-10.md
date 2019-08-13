@@ -1,23 +1,86 @@
 # Chapter 10 ( Enumerable & Enumerator)
 
-- Enumerable Methods
-    - Boolean Methods
-        - all
-        - any
-        - one
-        - none
-        - include
-    - search
-        - find based on code block
-        - find based on lambda function and code block
-        - use find_all
-            - select & rejects
-            - what does this return in most cases
-            - what does it return for hash and set
-        - grep method
-            - what's the base for grep method?
-            - write grep interms of select method
-    - grouping and partition
+*What's an enumerable object in ruby ?*
+<details>
+<summary>Answer</summary>
+
+- ruby links the concept of collections with enumerable module
+- all classes that include Enumerable module enter into a contract relation. The class will define a method called *each* and in turn the Enumerable module will give certain capabilities to the objects.
+
+</details>
+
+
+*Write a proof of concept each (which yields a set of colors) method by including Enumerable*
+<details>
+<summary>Answer</summary>
+
+```ruby
+class Rainbow
+    include Enumerable
+    def each
+        yield "red"
+        yield "orange"
+        yield "yellow"
+        yield "green"
+        yield "blue"
+        yield "indigo"
+        yield "violet"
+    end
+end
+
+r = Rainbow.new
+r.each do |color|
+    puts "Next color: #{color}"
+end
+```
+
+</details>
+
+*Boolean methods on the Enumerable object*
+<details>
+<summary>Answer</summary>
+
+- all
+- any
+- one
+- none
+- include
+
+</details>
+
+*How boolean method works*
+<details>
+<summary>Answer</summary>
+
+- It takes in a code block
+
+</details>
+
+*Will enumerable methods work on the Range 10.1..11.0*
+<details>
+<summary>Answer</summary>
+
+- It will throw Type error
+
+</details>
+    
+## Enumerable Search
+
+*find based on code block*
+
+*find based on lambda function and code block*
+
+
+- use find_all
+    - select & rejects
+    - what does this return in most cases
+    - what does it return for hash and set
+
+- grep method
+    - what's the base for grep method?
+    - write grep in terms of select method
+
+## grouping and partition
         - give example of group_by
             - for array
             - for hash
