@@ -480,7 +480,7 @@ class PlayingCard
       @cards = []
       SUITS.cycle(n) do |s|
         RANKS.cycle(1) do |r|
-          @cards << "#{r} of #{s}
+          @cards << "#{r} of #{s}"
         end
       end
     end
@@ -555,13 +555,47 @@ arr.sort_by(&:to_i)
 
 </details>
 
-_Enumerator_
+## Enumerator
+
+_What's an yielder in Enumerator_
+
+<details>
+<summary>Answer</summary>
+
+- in enumerator Enumerator::yielder is an object that is passed to the new block
+- using the yielder one can yield vlaues
+
+```ruby
+e = Enumerator.new do |y|
+  y.yield(1)
+  y.yield(3)
+  y.yield(5)
+end
+```
+
+</details>
+
+_create an enumerator and use it_
 
 <details>
 <summary>Answer</summary>
 
 ```ruby
+e = Enumerator.new do |y|
+  y << 1
+  y << 3
+  y << 5
+end
 
+e.first
+# 1
+e.each {|i| puts i}
+# 1
+# 3
+# 5
+#  => nil
+e.take(2)
+# [1, 3]
 ```
 
 </details>
@@ -571,40 +605,8 @@ _Difference between Iterator and an Enumerator_
 <details>
 <summary>Answer</summary>
 
-- enumerator is an object. it is not a collection but simply an object
-- iterator is a method that simply loops over
-
-</details>
-
-_Create a simple Enumerator_
-
-<details>
-<summary>Answer</summary>
-
-```ruby
-e = Enumerator.new do |y|
-    y << 1
-    y << 2
-    y << 3
-end
-
-```
-
-</details>
-
-_create an enumerator with manual yield calls_
-
-<details>
-<summary>Answer</summary>
-
-```ruby
-e = Enumerator.new do |y|
-    y.yeild(1)
-    y.yeild(2)
-    y.yeild(3)
-end
-
-```
+- enumerator is an object. it is not a collection but simply a machine that yields value one at a time. so it can maintain its internal state.
+- an iterator is a method that yields one or more values to a block. iterator can't maintain its own state.
 
 </details>
 
@@ -621,35 +623,172 @@ end
 
 </details>
 
-_enum_for ( method_name, arg1, arg2, arg3)_
+_how enum_for method works_
 
 <details>
 <summary>Answer</summary>
 
-```ruby
+- obj.enum_for takes in any method that will yield the next element when called
+- it can also take in arguments that can be passed on to the method name used to create the enumerator
 
+```ruby
+names = %w(David Black Yukihiro Matsumoto)
+e = names.enum_for(:select)
+e.each {|n| n.include?('a') }
+e.includ?('Black')
 ```
 
 </details>
 
-_another way of getting enum for an object with imiplicit enumerators_
+_why should you be careful with the argument passed in enum_for_
 
 <details>
 <summary>Answer</summary>
 
-```ruby
+- this has to do with pass by value vs pass by reference
 
+```ruby
+names = %w(David Black Yukihiro Matsumoto)
+e = names.enum_for(:inject, "Names: ")
+# => #<Enumerator: ["David", "Black", "Yukihiro", "Matsumoto"]:inject("Names:")>
+e.each {|string, name| string << "#{name}..." }
+# "Names: David...Black...Yukihiro...Matsumoto..."
+```
+
+- the original name is overwritten with the result of accumulator because of << operator
+
+```ruby
+e.each {|string, name| string << "#{name}..." }
+# => "Names: David...Black...Yukihiro...Matsumoto...David...Black...Yukihiro...Matsumoto..."
+```
+
+- it should have been + operator instead
+
+```ruby
+names = %w(David Black Yukihiro Matsumoto)
+e = names.enum_for(:inject, "Names: ")
+e.each {|string, name| string + "#{name}..." }
+#  => "Names: David...Black...Yukihiro...Matsumoto..."
+e.each {|string, name| string + "#{name}..." }
+#  => "Names: David...Black...Yukihiro...Matsumoto..."
 ```
 
 </details>
 
-_create a class CardDeck with suits and cards._
+_another way of creating enumerator from an object and method using Enumerator.new_
 
 <details>
 <summary>Answer</summary>
 
 ```ruby
+Enumerator.new(obj, method_name, arg1, arg2...)
+```
 
+</details>
+
+_what are implicit enumerator and what is it's main use case?_
+
+<details>
+<summary>Answer</summary>
+
+- most iterator methods such as each_byte, map, select etc.. returns a corresponding enum
+- it has the same effect as using enum_for
+- the main use case for this is method chaining
+
+```ruby
+arr = [1,2,3]
+e = arr.each
+# is same as
+e1 = arr.enum_for(:each)
+```
+
+</details>
+
+_How to hook each method to any enumerator_
+
+<details>
+<summary>Answer</summary>
+
+- each method behaves based on only what the enum yields and returns
+- for example each can behave as map here
+
+```ruby
+array = %w(cat dog rabbit)
+# ["cat", "dog", "rabbit"]
+e = array.map
+#<Enumerator: ["cat", "dog", "rabbit"]:map>
+e.each {|animal| animal.capitalize } # return value is like a map
+# ["Cat", "Dog", "Rabbit"]
+```
+
+</details>
+
+_what's un overriding behavior of enums_
+
+<details>
+<summary>Answer</summary>
+
+- when a class includes Enumerable and over rides one or more of its methods to suit its need, there is a way to get back the original behavior of enumerable
+- just by creating a new enumerable using each
+
+```ruby
+h = { cat: "feline", dog: "canine", cow: "bovine" }
+# => {:cat=>"feline", :dog=>"canine", :cow=>"bovine}
+h.select {|key,value| key =~ /c/ }
+# => {:cat=>"feline", :cow=>"bovine }
+e = h.each
+e.select {|key,value| key =~ /c/}
+# [[:cat, "feline"], [:cow, "bovine"]]
+```
+
+</details>
+
+_How passing an enum protects the object_
+
+<details>
+<summary>Answer</summary>
+
+- In ruby a method can easily modify the passed argument object
+- To protect an object from such a change but still make the method consume the object
+- we can pass an enumerator of the object instead of the object itself
+- this mostly works when the method just wants to iterate over the passed object
+
+```ruby
+def give_me_an_array(array)
+  array << "yolo"
+end
+
+give_me_an_array(array.each)
+```
+
+</details>
+
+_create a class CardDeck with suits and cards_
+
+<details>
+<summary>Answer</summary>
+
+- here cards can be mutated
+
+```ruby
+class PlayingCard
+  SUITS = %w(clubs diamonds hearts spades)
+  RANKS = %w(2 3 4 5 6 7 8 9 10 J Q K A)
+  class Deck
+    attr_reader :cards
+    def initialize(n=1)
+      @cards = []
+      SUITS.cycle(n) do |s|
+        RANKS.cycle(1) do |r|
+          @cards << "#{r} of #{s}"
+        end
+      end
+    end
+  end
+end
+d = PlayingCard::Deck.new
+d << "Joker"
+# cards mutated
 ```
 
 </details>
@@ -659,30 +798,84 @@ _make cards accessible only via enums so that its not modifiable_
 <details>
 <summary>Answer</summary>
 
-```ruby
+- instead of attr_reader make the @cards readable through methods and return enum instead
 
+```ruby
+class PlayingCard
+  SUITS = %w(clubs diamonds hearts spades)
+  RANKS = %w(2 3 4 5 6 7 8 9 10 J Q K A)
+  class Deck
+    def initialize(n=1)
+      @cards = []
+      SUITS.cycle(n) do |s|
+        RANKS.cycle(1) do |r|
+          @cards << "#{r} of #{s}"
+        end
+      end
+    end
+
+    def cards
+      @cards.each
+    end
+  end
+end
+
+
+d = PlayingCard::Deck.new
+d << "Joker"
+# with throw error method not defined
 ```
 
 </details>
 
-_get the next item in an enumerator_
+_next and rewind on enumerator_
 
 <details>
 <summary>Answer</summary>
 
-```ruby
+- next gets the next element yielded
+- rewind resets the state to beginning
 
+```ruby
+a = (1..10).to_a
+# => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+e = a.each
+# => #<Enumerator: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:each>
+e.next
+# => 1
+e.next
+# => 2
+e.next
+# => 3
+e.rewind
+# => #<Enumerator: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:each>
+e.next
+# => 1
 ```
 
 </details>
 
-_get the previous item in an enumerator_
+_How to give a non enumerable object the functionalities of Enumerable_
 
 <details>
 <summary>Answer</summary>
 
-```ruby
+- all it needs is a method that can yield
 
+```ruby
+module Music
+  class Scale
+    NOTES = %w(c c# d d# e f f# g a a# b)
+    def play
+      NOTES.each {|note| yield note }
+    end
+  end
+end
+
+scale = Music::Scale.new
+e = scale.enum_for(:play)
+# now scale can use all enumerable methods
+e.include?("d")
 ```
 
 </details>
@@ -692,9 +885,7 @@ _what is the problem with method chaining_
 <details>
 <summary>Answer</summary>
 
-```ruby
-
-```
+- It creates multiple intermediate objects based on the number of chains
 
 </details>
 
@@ -703,9 +894,8 @@ _how does using enumerator solve the problem with chaining_
 <details>
 <summary>Answer</summary>
 
-```ruby
-
-```
+- Enumerator methods like each_slice are the prime candidates for these
+- This optimizes because of lazy mechanism for enumerators
 
 </details>
 
@@ -714,8 +904,14 @@ _get the index along with the item being enumerated_
 <details>
 <summary>Answer</summary>
 
-```ruby
+- with_index method can be chained with any enumerator method to get a second argument to the block passed.
+- each.with_index, map.with_index and so on
 
+```ruby
+ a = (0..10).to_a
+#  => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+a.select.with_index {|val, i| i % 3 == 0}
+# => [0, 3, 6, 9]
 ```
 
 </details>
@@ -726,18 +922,48 @@ _implement ^ operator for string with enumerator_
 <summary>Answer</summary>
 
 ```ruby
-
+class String
+  def ^(key)
+    kenum = key.each_byte.cycle
+    each_byte.map {|byte| byte ^ kenum.next }.pack("C*").force_encoding(self.encoding)
+  end
+end
 ```
 
 </details>
 
-_make use of lazy enumerator approach to get first 10 items that are divisible by 3 in range 1..Float::INIFINITY_
+_solve this (1..Float::INFINITY).select {|n| n % 3 == 0 }.first(10)_
 
 <details>
 <summary>Answer</summary>
 
 ```ruby
+(1..Float::INFINITY).lazy.select {|n| n % 3 == 0 }.first(10)
+```
 
+</details>
+
+_write a lazy enumerator for fizz buzz to work on 0 to n_
+
+<details>
+<summary>Answer</summary>
+
+```ruby
+def fb_calc(i)
+  case 0
+  when i % 15
+    "FizzBuzz"
+  when i % 3
+    "Fizz"
+  when i % 5
+    "Buzz"
+  else
+    i.to_s
+  end
+end
+def fb(n)
+  (1..Float::INFINITY).lazy.map {|i| fb_calc(i) }.first(n)
+end
 ```
 
 </details>
