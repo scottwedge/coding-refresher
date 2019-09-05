@@ -31,6 +31,21 @@ Recursion and Memoization are always top down
 21. factorial using memoization
 22. factorial using dp
 23. pre order traversal of a binary tree
-24. Given a binary tree, For each node, add sum of all the nodes in tis hierarchy to its value.
+24. Given a binary tree, For each node, add sum of all the nodes in its hierarchy to its value.
+![Tree Sum](../assets/tree-sum.png)
 25. In combinatorics, Combination is defined recursively. C(n, m) = C(n - 1, m) + C(n-1, m-1). Write a program to find this through Dynamic Programming and Recursion
-26.
+26. Given a two-dimesnional square matrix cost[][] of order M\*N where cost[i][j] represents the cost of passing through cell(i,j). Total cost to reach a particular cell is the sum of costs of all the cell in that path (including the starting and final cell). We can only move either downward or rightward i.e If we are at cell (i,j) the we can either go to the cell (i, j+1) or to (i+1, j).
+![Min Cost Path](../assets/min-cost-path-1.png)
+27. Same as above problem but diagonal move is allowed. i.e (i+1, j+1)
+![Min Cost Path](../assets/min-cost-path-2.png)
+28. Given an empty plot of size 2 * n. we can to place tiles such that entire plot is covered. Each tile is size 2 * 1 and can be place either horizontally or vertically. If n is 5, then one way to cover the plot
+![place tiles](place-tiles-1.png)
+29. If size of the plot in previous example is changed to 3 * n, then what changes do we need to make in the solution above. The below picture shows one of the possible arrangements on a plot of size 3 * n where n = 12.
+![place tiles](../assets/place-tiles-2.png)
+30. Consider a game where a player can score 3, 5, or 10 points in one move. Given a total score N, find the total number of unique ways to reach a score of N.
+For example: If N = 13, out should be 5 because there are 5 ways to reach to a score of 13 as shown below. (3, 10), (3, 5, 5) (5, 5, 3) (10, 3)
+31. What is the total number of ways to reach a particular score if (10, 3) and (3, 10) are considered same. Modify your function accordingly.
+32. Given an array of integers, write a function that returns the maximum sum of sub array, such that elements are contiguous.
+Input Array: {-2, -3, 4, -1, -2, 1, 5, -3}
+Output: 7
+(-2, -3, **4, -1, -2, 1, 5, -3**)
