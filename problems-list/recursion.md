@@ -7,8 +7,8 @@ Recursion and Memoization are always top down
 5. factorial using recursion
 6. power of n
 7. tower of hanoi
-8. print a list
-9. print a list in reverse
+8. print a linked list
+9. print a linked list in reverse
 10. binary tree in order traversal
 11. binary tree pre order traversal
 12. bubble sort
