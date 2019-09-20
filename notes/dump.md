@@ -32,9 +32,6 @@
 - https://www.geeksforgeeks.org/software-design-patterns/
 - https://www.reddit.com/r/DesignPatterns/
 
-
-
-
 ## Courses - System Design
 
 - [Coursera - OOD](https://www.coursera.org/learn/object-oriented-design)
