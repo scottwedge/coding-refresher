@@ -1,6 +1,141 @@
-# Top Interview Questions
+<!-- TOC -->
 
-## Easy
+- [1. Must Do List](#1-must-do-list)
+  - [1.1. Array](#11-array)
+  - [1.2. Binary](#12-binary)
+  - [1.3. Dynamic Programming](#13-dynamic-programming)
+  - [1.4. Graph](#14-graph)
+  - [1.5. Interval](#15-interval)
+  - [1.6. Linked List](#16-linked-list)
+  - [1.7. Matrix](#17-matrix)
+  - [1.8. String](#18-string)
+  - [1.9. Tree](#19-tree)
+  - [1.10. Heap](#110-heap)
+- [2. Top Interview Questions](#2-top-interview-questions)
+  - [2.1. Easy](#21-easy)
+  - [2.2. Medium](#22-medium)
+  - [2.3. Hard](#23-hard)
+  - [2.4. Amazon Top 50](#24-amazon-top-50)
+  - [2.5. Facebook Top 50](#25-facebook-top-50)
+  - [2.6. Google Top 50](#26-google-top-50)
+  - [2.7. LinkedIn Top 50](#27-linkedin-top-50)
+- [Analyzing Patterns](#analyzing-patterns)
+- [Refs](#refs)
+
+<!-- /TOC -->
+
+# 1. Must Do List
+
+## 1.1. Array
+
+- Two Sum - https://leetcode.com/problems/two-sum/
+- Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+- Contains Duplicate - https://leetcode.com/problems/contains-duplicate/
+- Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/
+- Maximum Subarray - https://leetcode.com/problems/maximum-subarray/
+- Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/
+- Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+- Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/
+- 3Sum - https://leetcode.com/problems/3sum/
+- Container With Most Water - https://leetcode.com/problems/container-with-most-water/
+
+## 1.2. Binary
+
+- Sum of Two Integers - https://leetcode.com/problems/sum-of-two-integers/
+- Number of 1 Bits - https://leetcode.com/problems/number-of-1-bits/
+- Counting Bits - https://leetcode.com/problems/counting-bits/
+- Missing Number - https://leetcode.com/problems/missing-number/
+- Reverse Bits - https://leetcode.com/problems/reverse-bits/
+
+## 1.3. Dynamic Programming
+
+- Climbing Stairs - https://leetcode.com/problems/climbing-stairs/
+- Coin Change - https://leetcode.com/problems/coin-change/
+- Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/
+- Longest Common Subsequence - 
+- Word Break Problem - https://leetcode.com/problems/word-break/
+- Combination Sum - https://leetcode.com/problems/combination-sum-iv/
+- House Robber - https://leetcode.com/problems/house-robber/
+- House Robber II - https://leetcode.com/problems/house-robber-ii/
+- Decode Ways - https://leetcode.com/problems/decode-ways/
+- Unique Paths - https://leetcode.com/problems/unique-paths/
+- Jump Game - https://leetcode.com/problems/jump-game/
+
+## 1.4. Graph
+
+- Clone Graph - https://leetcode.com/problems/clone-graph/
+- Course Schedule - https://leetcode.com/problems/course-schedule/
+- Pacific Atlantic Water Flow - https://leetcode.com/problems/pacific-atlantic-water-flow/
+- Number of Islands - https://leetcode.com/problems/number-of-islands/
+- Longest Consecutive Sequence - https://leetcode.com/problems/longest-consecutive-sequence/
+- Alien Dictionary (Leetcode Premium) - https://leetcode.com/problems/alien-dictionary/
+- Graph Valid Tree (Leetcode Premium) - https://leetcode.com/problems/graph-valid-tree/
+- Number of Connected Components in an Undirected Graph (Leetcode Premium) - https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
+
+## 1.5. Interval
+
+- Insert Interval - https://leetcode.com/problems/insert-interval/
+- Merge Intervals - https://leetcode.com/problems/merge-intervals/
+- Non-overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/
+- Meeting Rooms (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms/
+- Meeting Rooms II (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms-ii/
+
+## 1.6. Linked List
+
+- Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/
+- Detect Cycle in a Linked List - https://leetcode.com/problems/linked-list-cycle/
+- Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
+- Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
+- Remove Nth Node From End Of List - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+- Reorder List - https://leetcode.com/problems/reorder-list/
+
+## 1.7. Matrix
+
+- Set Matrix Zeroes - https://leetcode.com/problems/set-matrix-zeroes/
+- Spiral Matrix - https://leetcode.com/problems/spiral-matrix/
+- Rotate Image - https://leetcode.com/problems/rotate-image/
+- Word Search - https://leetcode.com/problems/word-search/
+
+## 1.8. String
+
+- Longest Substring Without Repeating Characters - https://leetcode.com/problems/longest-substring-without-repeating-characters/
+- Longest Repeating Character Replacement - https://leetcode.com/problems/longest-repeating-character-replacement/
+- Minimum Window Substring - https://leetcode.com/problems/minimum-window-substring/
+- Valid Anagram - https://leetcode.com/problems/valid-anagram/
+- Group Anagrams - https://leetcode.com/problems/group-anagrams/
+- Valid Parentheses - https://leetcode.com/problems/valid-parentheses/
+- Valid Palindrome - https://leetcode.com/problems/valid-palindrome/
+- Longest Palindromic Substring - https://leetcode.com/problems/longest-palindromic-substring/
+- Palindromic Substrings - https://leetcode.com/problems/palindromic-substrings/
+- Encode and Decode Strings (Leetcode Premium) - https://leetcode.com/problems/encode-and-decode-strings/
+
+## 1.9. Tree
+
+- Maximum Depth of Binary Tree - https://leetcode.com/problems/maximum-depth-of-binary-tree/
+- Same Tree - https://leetcode.com/problems/same-tree/
+- Invert/Flip Binary Tree - https://leetcode.com/problems/invert-binary-tree/
+- Binary Tree Maximum Path Sum - https://leetcode.com/problems/binary-tree-maximum-path-sum/
+- Binary Tree Level Order Traversal - https://leetcode.com/problems/binary-tree-level-order-traversal/
+- Serialize and Deserialize Binary Tree - https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+- Subtree of Another Tree - https://leetcode.com/problems/subtree-of-another-tree/
+- Construct Binary Tree from Preorder and Inorder Traversal - https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+- Validate Binary Search Tree - https://leetcode.com/problems/validate-binary-search-tree/
+- Kth Smallest Element in a BST - https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+- Lowest Common Ancestor of BST - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+- Implement Trie (Prefix Tree) - https://leetcode.com/problems/implement-trie-prefix-tree/
+- Add and Search Word - https://leetcode.com/problems/add-and-search-word-data-structure-design/
+- Word Search II - https://leetcode.com/problems/word-search-ii/
+- https://leetcode.com/problems/binary-tree-maximum-path-sum/
+
+## 1.10. Heap
+
+- Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
+- Top K Frequent Elements - https://leetcode.com/problems/top-k-frequent-elements/
+- Find Median from Data Stream - https://leetcode.com/problems/find-median-from-data-stream/
+
+# 2. Top Interview Questions
+
+## 2.1. Easy
 
 1. https://leetcode.com/problems/reverse-string
 2. https://leetcode.com/problems/maximum-depth-of-binary-tree
@@ -50,7 +185,7 @@
 46. https://leetcode.com/problems/count-primes
 47. https://leetcode.com/problems/reverse-integer
 
-## Medium
+## 2.2. Medium
 
 1. https://leetcode.com/problems/binary-tree-inorder-traversal
 2. https://leetcode.com/problems/product-of-array-except-self
@@ -128,7 +263,7 @@
 75. https://leetcode.com/problems/divide-two-integers
 76. https://leetcode.com/problems/string-to-integer-atoi
 
-## Hard
+## 2.3. Hard
 
 1. https://leetcode.com/problems/trapping-rain-water
 2. https://leetcode.com/problems/longest-consecutive-sequence
@@ -155,9 +290,7 @@
 23. https://leetcode.com/problems/max-points-on-a-line
 
 
-# Amazon 
-
-## Top
+## 2.4. Amazon Top 50
 
 1. https://leetcode.com/problems/jewels-and-stones
 2. https://leetcode.com/problems/merge-two-binary-trees
@@ -210,9 +343,7 @@
 49. https://leetcode.com/problems/lru-cache
 51. https://leetcode.com/problems/word-ladder-ii
 
-# Facebook
-
-## Top
+## 2.5. Facebook Top 50
 
 1. https://leetcode.com/problems/hamming-distance
 2. https://leetcode.com/problems/move-zeroes
@@ -265,9 +396,7 @@
 50. https://leetcode.com/problems/lru-cache
 51. https://leetcode.com/problems/integer-to-english-words
 
-# Google
-
-## Top
+## 2.6. Google Top 50
 
 1. https://leetcode.com/problems/unique-email-addresses
 2. https://leetcode.com/problems/flipping-an-image
@@ -320,9 +449,7 @@
 49. https://leetcode.com/problems/regular-expression-matching
 50. https://leetcode.com/problems/lru-cache
 
-# LinkedIn
-
-## Top
+## 2.7. LinkedIn Top 50
 
 1. https://leetcode.com/problems/nested-list-weight-sum
 2. https://leetcode.com/problems/maximum-depth-of-binary-tree
@@ -375,7 +502,7 @@
 50. https://leetcode.com/problems/max-points-on-a-line
 51. https://leetcode.com/problems/valid-number
 
-## LeetCode Patterns :
+# Analyzing Patterns
 
 - [Tree traversals - Iterative](https://medium.com/leetcode-patterns/leetcode-pattern-0-iterative-traversals-on-trees-d373568eb0ec)
 - [Tree traversals - BFS, DFS - Part 1](https://medium.com/leetcode-patterns/leetcode-pattern-1-bfs-dfs-25-of-the-problems-part-1-519450a84353)
@@ -386,18 +513,12 @@
 - [Backtracking - 2](https://medium.com/leetcode-patterns/leetcode-pattern-3-backtracking-5d9e5a03dc26)
 - [MetaStuff](https://medium.com/leetcode-patterns/leetcode-pattern-4-meta-stuff-4ebbbef7d4c0)
 
-### Ref :
+# Refs
 
-- Leetcode patterns - [medium](https://medium.com/leetcode-patterns) , [same on reddit](https://www.reddit.com/r/lcpatterns)
+- [leet code patterns - medium](https://medium.com/leetcode-patterns/)
+- [leet code patterns - reddit](https://www.reddit.com/r/lcpatterns/)
 - [Medium Leetcode and Algorithms](https://medium.com/algorithms-and-leetcode/)
-
-```javascript
-list = $(".question-list-table").find("a")
-myLinks = []
-for(i = 0; i < list.length; i++){
-  if(list[i].href.includes("/problems/")){
-    myLinks.push(list[i].href)
-  }
-}
-myLinks.join("\n")
-```
+- [top 100 leetcode - blind curated list](https://www.teamblind.com/article/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU/)
+- [blind curated list](https://leetcode.com/list/xoqag3yj/)
+- [visualizing algos](https://jeremyaguilon.me/blog/visualizing_four_key_interview_algorithms)
+- [ranking interview questions](https://jeremyaguilon.me/blog/ranking_interview_questions_by_cram_score)

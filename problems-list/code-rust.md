@@ -1,3 +1,20 @@
+<!-- TOC -->
+
+- [problems list](#problems-list)
+  - [Arrays](#arrays)
+  - [Linked List](#linked-list)
+  - [Math & Stats](#math--stats)
+  - [String](#string)
+  - [Trees](#trees)
+  - [Stack and Queues](#stack-and-queues)
+  - [Graphs](#graphs)
+  - [Back Tracking](#back-tracking)
+  - [Dynamic Programming](#dynamic-programming)
+  - [Miscellaneous](#miscellaneous)
+
+<!-- /TOC -->
+
+
 ## problems list
 
 ### Arrays

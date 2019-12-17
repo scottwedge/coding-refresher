@@ -1,4 +1,3 @@
-Recursion and Memoization are always top down
 
 1. print 1 to n
 2. sum of 1 to n given n.

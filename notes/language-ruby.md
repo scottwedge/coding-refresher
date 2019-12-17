@@ -1,58 +1,58 @@
-# TOC
+# 1. TOC
 
 <!-- TOC -->
-- [TOC](#TOC)
-  - [DataTypes](#DataTypes)
-  - [Truthy and Falsy values](#Truthy-and-Falsy-values)
-  - [Check for null values](#Check-for-null-values)
-    - [check if variable, method or class is defined](#check-if-variable-method-or-class-is-defined)
-    - [check if variable has any value](#check-if-variable-has-any-value)
-    - [check if string is empty](#check-if-string-is-empty)
-    - [check if array is empty](#check-if-array-is-empty)
-    - [check if hash is empty](#check-if-hash-is-empty)
-  - [Sentinal Values](#Sentinal-Values)
-    - [INFINITY](#INFINITY)
-    - [convert to 32 bit signed integers](#convert-to-32-bit-signed-integers)
-  - [Strings](#Strings)
-    - [String Mutability](#String-Mutability)
-    - [Looping Strings](#Looping-Strings)
-      - [each_char](#eachchar)
-      - [to char array](#to-char-array)
-      - [each_char with_index](#eachchar-withindex)
-    - [Strings and ASCII](#Strings-and-ASCII)
-      - [convert string to unicode array](#convert-string-to-unicode-array)
-      - [convert char to ascii value](#convert-char-to-ascii-value)
-      - [sum of ascii values of string](#sum-of-ascii-values-of-string)
-      - [ascii to char](#ascii-to-char)
-    - [Useful methods](#Useful-methods)
-      - [include?](#include)
-  - [Conditional Statements](#Conditional-Statements)
-    - [IF..ELSE](#IFELSE)
-    - [SWITCH](#SWITCH)
-  - [Loops - Procedural](#Loops---Procedural)
-    - [while](#while)
-  - [Loops - Functional](#Loops---Functional)
-    - [map (alias - collect - came from smalltalk)](#map-alias---collect---came-from-smalltalk)
-    - [reduce (alias - inject)](#reduce-alias---inject)
-    - [find (alias - detect)](#find-alias---detect)
-    - [select](#select)
-    - [reject](#reject)
-  - [Pass by Value vs Pass by Reference](#Pass-by-Value-vs-Pass-by-Reference)
-  - [Scoping](#Scoping)
-  - [Arrays](#Arrays)
-    - [must know methods](#must-know-methods)
-    - [methods and complexities](#methods-and-complexities)
-    - [Filling Arrays with default values](#Filling-Arrays-with-default-values)
-    - [each and each_with_index](#each-and-eachwithindex)
-  - [Hash](#Hash)
-    - [implementation details](#implementation-details)
-  - [Set](#Set)
-  - [Queue](#Queue)
-  - [Threads](#Threads)
+
+- [1. TOC](#1-toc)
+  - [1.1. DataTypes](#11-datatypes)
+  - [1.2. Truthy and Falsy values](#12-truthy-and-falsy-values)
+  - [1.3. Check for null values](#13-check-for-null-values)
+    - [1.3.1. check if variable, method or class is defined](#131-check-if-variable-method-or-class-is-defined)
+    - [1.3.2. check if variable has any value](#132-check-if-variable-has-any-value)
+    - [1.3.3. check if string is empty](#133-check-if-string-is-empty)
+    - [1.3.4. check if array is empty](#134-check-if-array-is-empty)
+    - [1.3.5. check if hash is empty](#135-check-if-hash-is-empty)
+  - [1.4. Sentinal Values](#14-sentinal-values)
+    - [1.4.1. INFINITY](#141-infinity)
+    - [1.4.2. convert to 32 bit signed integers](#142-convert-to-32-bit-signed-integers)
+  - [1.5. Strings](#15-strings)
+    - [1.5.1. String Mutability](#151-string-mutability)
+    - [1.5.2. Looping Strings](#152-looping-strings)
+      - [1.5.2.1. each_char](#1521-each_char)
+      - [1.5.2.2. to char array](#1522-to-char-array)
+      - [1.5.2.3. each_char with_index](#1523-each_char-with_index)
+    - [1.5.3. Strings and ASCII](#153-strings-and-ascii)
+      - [1.5.3.1. convert string to unicode array](#1531-convert-string-to-unicode-array)
+      - [1.5.3.2. convert char to ascii value](#1532-convert-char-to-ascii-value)
+      - [1.5.3.3. sum of ascii values of string](#1533-sum-of-ascii-values-of-string)
+      - [1.5.3.4. ascii to char](#1534-ascii-to-char)
+  - [1.6. Conditional Statements](#16-conditional-statements)
+    - [1.6.1. IF..ELSE](#161-ifelse)
+    - [1.6.2. SWITCH](#162-switch)
+  - [1.7. Loops - Procedural](#17-loops---procedural)
+    - [1.7.1. while](#171-while)
+  - [1.8. Loops - Functional](#18-loops---functional)
+    - [1.8.1. map (alias - collect - came from smalltalk)](#181-map-alias---collect---came-from-smalltalk)
+    - [1.8.2. reduce (alias - inject)](#182-reduce-alias---inject)
+    - [1.8.3. find (alias - detect)](#183-find-alias---detect)
+    - [1.8.4. select](#184-select)
+    - [1.8.5. reject](#185-reject)
+  - [1.9. Pass by Value vs Pass by Reference](#19-pass-by-value-vs-pass-by-reference)
+  - [1.10. Scoping](#110-scoping)
+  - [1.11. Arrays](#111-arrays)
+    - [1.11.1. must know methods](#1111-must-know-methods)
+    - [1.11.2. methods and complexities](#1112-methods-and-complexities)
+    - [1.11.3. Filling Arrays with default values](#1113-filling-arrays-with-default-values)
+    - [1.11.4. each and each_with_index](#1114-each-and-each_with_index)
+  - [1.12. Hash](#112-hash)
+    - [Hash with default values](#hash-with-default-values)
+    - [1.12.1. implementation details](#1121-implementation-details)
+  - [1.13. Set](#113-set)
+  - [1.14. Queue](#114-queue)
+  - [1.15. Threads](#115-threads)
 
 <!-- /TOC -->
 
-## DataTypes
+## 1.1. DataTypes
 
 - Booleans
     - *true* - TrueClass
@@ -65,7 +65,7 @@
 - Set (needs to include library)
 - Queue (present in Thread::Queue)
 
-## Truthy and Falsy values
+## 1.2. Truthy and Falsy values
 
 - falsy values = **nil** and **false**
 - everything else is true. even including
@@ -81,9 +81,9 @@
 puts !!my_value
 ```
 
-## Check for null values
+## 1.3. Check for null values
 
-### check if variable, method or class is defined
+### 1.3.1. check if variable, method or class is defined
 
 - defined? is a keyword
 - returns **nil** or **string described what the variable is**
@@ -93,7 +93,7 @@ defined? my_val
 # returns local-variable, method or constant
 ```
 
-### check if variable has any value
+### 1.3.2. check if variable has any value
 
 ```ruby
 my_val.nil?
@@ -102,7 +102,7 @@ my_val.nil?
 
 - since only *nil* and *false* evaluates to false, different object should be checked differently
 
-### check if string is empty
+### 1.3.3. check if string is empty
 
 ```ruby
 my_val = ""
@@ -112,7 +112,7 @@ my_val.empty?
 
 > NOTE : empty? is not part of Numbers
 
-### check if array is empty
+### 1.3.4. check if array is empty
 
 ```ruby
 my_array = []
@@ -120,7 +120,7 @@ my_array.empty?
 # same as my_array.length == 0
 ```
 
-### check if hash is empty
+### 1.3.5. check if hash is empty
 
 ```ruby
 my_hash = {}
@@ -128,9 +128,9 @@ my_hash.empty?
 # same as my_hash.length == 0
 ```
 
-## Sentinal Values
+## 1.4. Sentinal Values
 
-### INFINITY
+### 1.4.1. INFINITY
 
 ```ruby
 Inf = Float::INFINITY
@@ -140,7 +140,7 @@ require "bigdecimal"
 BigDecimal::INFINITY
 ```
 
-### convert to 32 bit signed integers
+### 1.4.2. convert to 32 bit signed integers
 
 ```ruby
 my_num = Array(my_num).pack('l').unpack('l').first
@@ -148,9 +148,9 @@ my_num = Array(my_num).pack('l').unpack('l').first
 #   q         | Integer | 64-bit signed, native endian (int64_t)
 ```
 
-## Strings
+## 1.5. Strings
 
-### String Mutability
+### 1.5.1. String Mutability
 
 - Except Boolean, Numeric, nil, and Symbol all objects are mutable
 - strings are mutable in ruby
@@ -169,9 +169,9 @@ x.object_id
 
 - the object_id doesn't change
 
-### Looping Strings
+### 1.5.2. Looping Strings
 
-#### each_char
+#### 1.5.2.1. each_char
 
 ```ruby
 s = "abcd"
@@ -180,7 +180,7 @@ s.each_char do |val|
 end
 ```
 
-#### to char array
+#### 1.5.2.2. to char array
 
 ```ruby
 s = "abcd"
@@ -189,7 +189,7 @@ s.chars
 # shortcut for s.each_char.to_a
 ```
 
-#### each_char with_index
+#### 1.5.2.3. each_char with_index
 
 ```ruby
 s = "abcd"
@@ -198,9 +198,9 @@ s.each_char.with_index do |val, index|
 end
 ```
 
-### Strings and ASCII
+### 1.5.3. Strings and ASCII
 
-#### convert string to unicode array
+#### 1.5.3.1. convert string to unicode array
 
 - returns unicode array (in utf-8 first 127 are same as ascii)
 
@@ -210,7 +210,7 @@ s.codepoints
 # returns array [97, 98, 99, 100]
 ```
 
-#### convert char to ascii value
+#### 1.5.3.2. convert char to ascii value
 
 - returns ascii code of first character in a string
 
@@ -221,7 +221,7 @@ s = "abcd"
 s.ord #=> 97
 ```
 
-#### sum of ascii values of string
+#### 1.5.3.3. sum of ascii values of string
 
 ```ruby
 s = "a"
@@ -230,19 +230,15 @@ s = "abcd"
 s.sum #=> 394
 ```
 
-#### ascii to char
+#### 1.5.3.4. ascii to char
 
 ```ruby
 97.chr #=> returns a
 ```
 
-### Useful methods
+## 1.6. Conditional Statements
 
-#### include?
-
-## Conditional Statements
-
-### IF..ELSE
+### 1.6.1. IF..ELSE
 
 ```ruby
 if condition
@@ -254,7 +250,7 @@ else condition
 end
 ```
 
-### SWITCH
+### 1.6.2. SWITCH
 
 ```ruby
 case x
@@ -271,9 +267,9 @@ else
 end
 ```
 
-## Loops - Procedural
+## 1.7. Loops - Procedural
 
-### while
+### 1.7.1. while
 
 ```ruby
 counter = 0
@@ -282,18 +278,18 @@ while(counter < 100)
 end
 ```
 
-## Loops - Functional
+## 1.8. Loops - Functional
 
 - map, reduce, find, select, reject
 
-### map (alias - collect - came from smalltalk)
+### 1.8.1. map (alias - collect - came from smalltalk)
 
 ```ruby
 [1,2,3,4,5,6,7,8,9,10].map{|e| e*3 }
 # returns [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
 ```
 
-### reduce (alias - inject)
+### 1.8.2. reduce (alias - inject)
 
 ```ruby
 start_val = 0
@@ -302,37 +298,37 @@ start_val = 0
 # returns 15
 ```
 
-### find (alias - detect)
+### 1.8.3. find (alias - detect)
 
 ```ruby
 [1,2,3,4,5,6,7,8,9,10].find{|el| el / 2 == 2 }
 # returns 4
 ```
 
-### select
+### 1.8.4. select
 
 ```ruby
 [1,2,3,4,5,6,7,8,9,10].select{|el| el%2 == 0 }
 # returns [2,4,6,8,10]
 ```
 
-### reject
+### 1.8.5. reject
 
 ```ruby
 [1,2,3,4,5,6,7,8,9,10].reject{|e| e==2 || e==8 }
 # returns [1, 3, 4, 5, 6, 7, 9, 10]
 ```
 
-## Pass by Value vs Pass by Reference
+## 1.9. Pass by Value vs Pass by Reference
 
 - since ruby doesn't have primitive data types and everything is an object, everything is passed by reference.
 - However only the immutable objects Boolean, Numeric, nil, and Symbol remain un affected by changes that happens inside the function.
 
-## Scoping
+## 1.10. Scoping
 
-## Arrays
+## 1.11. Arrays
 
-### must know methods
+### 1.11.1. must know methods
 
 - push, pop
 - shift, unshift
@@ -352,7 +348,7 @@ start_val = 0
 - sort, sort_by
 - uniq, unique!
 
-### methods and complexities
+### 1.11.2. methods and complexities
 
 | method name    | complexity | Why                  | Source                                                                           |
 | -------------- | ---------- | -------------------- | -------------------------------------------------------------------------------- |
@@ -363,7 +359,7 @@ start_val = 0
 
 insert(pos, element1, element2, ...)
 
-### Filling Arrays with default values
+### 1.11.3. Filling Arrays with default values
 
 ```
 default_value = my_val
@@ -372,7 +368,7 @@ default_value = my_val
 
 NOTE : don't use Array.new(size, value) since same reference value will copied to all array indices.
 
-### each and each_with_index
+### 1.11.4. each and each_with_index
 
 ```ruby
 arr.each_with_index do |element, index|
@@ -380,20 +376,23 @@ arr.each_with_index do |element, index|
 end
 ```
 
-## Hash
+## 1.12. Hash
 
-```
-Hash.new(default_value)
+### Hash with default values
+
+```ruby
+# Hash.new(default_value)
+t = Hash.new(0)
+t[100] += 1
 ```
 
-### implementation details
+### 1.12.1. implementation details
 
 - https://anadea.info/blog/how-hash-table-works-ruby-examples
 - https://www.rubyguides.com/2017/02/hash-tables-explained/
 
-## Set
+## 1.13. Set
 
+## 1.14. Queue
 
-## Queue
-
-## Threads
+## 1.15. Threads
