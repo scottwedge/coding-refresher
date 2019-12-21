@@ -22,6 +22,10 @@ Input:
 
 # @param {ListNode[]} lists
 # @return {ListNode}
+
+
+=begin
+TLE solution
 def merge_k_lists(lists)
   dummy = prev = ListNode.new(-1)
   while(min_index = get_min_index(lists))
@@ -43,9 +47,41 @@ def get_min_index(lists)
   end
   return min_index
 end
+=end
 
+# Definition for singly-linked list.
+# class ListNode
+#     attr_accessor :val, :next
+#     def initialize(val)
+#         @val = val
+#         @next = nil
+#     end
+# end
 
+# Accepted Solution
+# @param {ListNode[]} lists
+# @return {ListNode}
+def merge_k_lists(lists)
+  lists.reduce {|a,b| merge_sorted_lists(a,b)}
+end
 
+def merge_sorted_lists(l1, l2)
+  dummy = prev = ListNode.new(nil)
+  while(l1 && l2)
+    if(l1.val < l2.val)
+      prev.next = l1
+      l1 = l1.next
+    else
+      prev.next = l2
+      l2 = l2.next
+    end
+    prev = prev.next
+    prev.next = nil
+  end
+  prev.next = l1 if l1
+  prev.next = l2 if l2
+  return dummy.next
+end
 
 
 
