@@ -396,3 +396,29 @@ t[100] += 1
 ## 1.14. Queue
 
 ## 1.15. Threads
+
+
+https://ruby-doc.org/core-2.1.1/Array.html#method-i-bsearch
+
+https://github.com/ThibaultJanBeyer/cheatsheets/blob/master/Ruby-Cheatsheet.md
+
+http://www.cheat-sheets.org/saved-copy/RubyCheat.pdf
+
+https://www.codeconquest.com/language-cheat-sheets/ruby-cheat-sheet/
+
+$! - latest error message
+$@ - location of error
+$_ - string last read by gets
+$. - line number last read by interpreter
+$& - string last matched by regexp
+$~ - the last regexp match, as an array of subexpressions
+$n - the nth subexpression in the last match (same as $~[n])
+$= - case-insensitivity flag
+$/ - input record separator
+$\ - output record separator
+$0 - the name of the ruby script file
+$* (or ARGV) - the command line arguments
+$$ - interpreter’s process ID
+$? - exit status of last executed child process
+$-i $-l $-p $-v - Command line switches
+$-v (or $VERBOSE) - verbose mode

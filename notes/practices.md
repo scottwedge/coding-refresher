@@ -16,9 +16,9 @@
 | 12 | 2019-12-19 23:45:15 |  [Reorder List](../src/practice/session-1/reorder_list.rb)|
 | 13 | 2019-12-20 20:40:24 |  [Best Time to Buy and Sell Stock](../src/practice/session-1/best_time_buy_sell.rb) [dp]|
 | 14 | 2019-12-20 21:48:57 |  [Product of Array Except Self](../src/practice/session-1/product_except_self.rb)|
-| 15 |  |  [Maximum Subarray](../src/practice/session-1/)|
-| 16 |  |  [Maximum Product Subarray](../src/practice/session-1/)|
-| 17 |  |  [Find Minimum in Rotated Sorted Array](../src/practice/session-1/)|
-| 18 |  |  [Search in Rotated Sorted Array](../src/practice/session-1/)|
-| 19 |  |  [3Sum](../src/practice/session-1/)|
+| 15 | 2019-12-21 11:31:49 |  [Maximum Subarray](../src/practice/session-1/max_subarray_sum.rb)|
+| 16 | 2019-12-21 12:11:17 |  [Maximum Product Subarray](../src/practice/session-1/max_subarray_product.rb)|
+| 17 | 2019-12-21 13:24:17 |  [Find Minimum in Rotated Sorted Array](../src/practice/session-1/find_min_rotated.rb)|
+| 18 | 2019-12-21 16:45:56 |  [Search in Rotated Sorted Array](../src/practice/session-1/binary_search_rotated.rb)|
+| 19 | 2019-12-21 18:37:12 |  [3Sum](../src/practice/session-1/three_sum.rb)|
 | 20 |  |  [Container With Most Water](../src/practice/session-1/)|
