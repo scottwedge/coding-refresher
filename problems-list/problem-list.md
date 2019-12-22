@@ -19,8 +19,12 @@
 13. [Must Do Coding Questions for Companies like Amazon, Microsoft, Adobe, …](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/)
 14. [Top 10 algorithms in Interview Questions](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/)
 15. [Top 10 Algorithms and Data Structures for Competitive Programming](https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/)
-
-- https://github.com/sagivo/algorithms
+16. [Practice for cracking any coding interview - GeeksforGeeks](https://www.geeksforgeeks.org/practice-for-cracking-any-coding-interview/)
+17. [interview bit google](https://www.interviewbit.com/search/?q=Google)
+18. [interview bit amazon](https://www.interviewbit.com/search/?q=Amazon)
+19. [interview bit microsoft](https://www.interviewbit.com/search/?q=Microsoft)
+20. [Top 25 Interview Questions - GeeksforGeeks](https://www.geeksforgeeks.org/top-25-interview-questions/)
+21. https://github.com/sagivo/algorithms
 
 # Algorithms by Topic
 

@@ -10,3 +10,8 @@
 
 - [Design Patterns - Christopher Okhravi](https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc)
 - [Design Patterns - Derek Banas]https://www.youtube.com/playlist?list=PLF206E906175C7E07
+
+
+https://www.youtube.com/user/GotoConferences
+
+https://www.youtube.com/user/MarakanaTechTV

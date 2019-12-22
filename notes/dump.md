@@ -186,3 +186,6 @@ find-max, successor, predecessor when tree is height-balanced.
 Understand node fields, pointer implementation. Be familiar
 with notion of balance, and operations maintainingbalance.
 Binary search trees
+
+
+http://mlubinsky.github.io/

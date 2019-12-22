@@ -21,4 +21,4 @@
 | 17 | 2019-12-21 13:24:17 |  [Find Minimum in Rotated Sorted Array](../src/practice/session-1/find_min_rotated.rb)|
 | 18 | 2019-12-21 16:45:56 |  [Search in Rotated Sorted Array](../src/practice/session-1/binary_search_rotated.rb)|
 | 19 | 2019-12-21 18:37:12 |  [3Sum](../src/practice/session-1/three_sum.rb)|
-| 20 |  |  [Container With Most Water](../src/practice/session-1/)|
+| 20 | 2019-12-21 23:03:43 |  [Container With Most Water](../src/practice/session-1/container_with_most_area.rb)|
