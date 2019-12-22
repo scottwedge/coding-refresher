@@ -131,71 +131,15 @@ xavier.children
 
 ## Lynk Logistics
 
-#1
+*previously asked questions in this company*
 
-Lexi is playing a string game with following rules:
-  a. It starts with a string S.
-  b. During each turn, she performs the following move:
-      a. Choose an index in s. The chosen index must be strictly greather than any index chosen in a prior move.
-      b. Perform one or more circular rotations (in either direction) of the suffix starting at the chose index.
-For example, let's say abcdefjghi. During oru move, we choose to do three right rotations of the suffix starting at index 6.
+- https://www.hackerrank.com/challenges/suffix-rotation
+- https://www.hackerrank.com/contests/hourrank-14/challenges/clues-on-a-binary-path/problem
 
-Original String: abcdefjghi
-Move 1: abcdefjghi -> abcdefijgh -> abcdfhijg -> abcdefghij
-Note that this counts as one move
+*Topics to focus*
 
-The goal of the game is to convert s into the lexicographically smallest possible string in as few moves as possible.
-In other words, we want the chracters to be in alphabetical order.
-Find the minimum number of moves necessary to convert s into the lexicographically smallest string and print that number.
-
-Input Format
-
-Initial String s
-
-Constraints
-
-  Consists of lowercase English alphabetic letters only.
-
-Output Format
-
-Print an integer on a new line denoting the minimum number of moves required to convert s into the lexicographically smallest string possible.
-
-Sample Input 1
-abcdefghij
-
-Sample Output 1
-0
-
-Sample Input 2
-acab
-
-Sample Output 2
-1
-
-#2
-
-Problem description
-Buffy and Willow live in Sunnydate, which has n houses and m bidirectional roads connecting them.
-Each road has an assigned vatue, c(i) , where c(i) € {0,1}, and each house is numbered with a distinct integer from 1 to n.
-Buffy and Willow are looking for vampires and need to find the number of different paths of length d from house number 1.
-Each path is characterized by a binary sequence of length d, where each integer j in the path is the value of c(j) for the
-jth edge in the path. Two paths are different if the binary sequences characterizing these paths are distinct.
-Note that they may need to visit the same house several times or use the same road several times to find all possible paths.
-Given a map of Sunnydale, hetp Buffy and Willow find and print the number of different paths of length d from
-house number 1 to the other houses in Sunnydale.
-Input Format:
-The first line contains three space-separated integers describing the respective values of n (the number of houses),
-m (the number of bidirectional roads), and d (the distance they want to travel).
-Each of the m subsequent lines contains three space-separated integers describing the respective values of u, v, and c
-that define a bidirectional road between houses u and v having assigned value c.
-constraints:
-There may be roads connecting house to itself.
-There may be more than one road between two houses.
-Output Format:
-Print an integer denoting the total number of paths.
-Sample Input:
-323
-1290
-131
-Sample Output:
-4
+- Trees
+- Graphs
+- Game Theory
+- Backtracking
+- Dynamic Programming
