@@ -1,6 +1,6 @@
 <!-- TOC -->
 
-- [1. Must Do List](#1-must-do-list)
+- [1. Must Do List (from Team Blind)](#1-must-do-list-from-team-blind)
   - [1.1. Array](#11-array)
   - [1.2. Binary](#12-binary)
   - [1.3. Dynamic Programming](#13-dynamic-programming)
@@ -24,7 +24,7 @@
 
 <!-- /TOC -->
 
-# 1. Must Do List
+# 1. Must Do List (from Team Blind)
 
 ## 1.1. Array
 

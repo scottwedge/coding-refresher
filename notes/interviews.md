@@ -131,6 +131,16 @@ xavier.children
 
 ## Lynk Logistics
 
+*Phone Screen*
+
+- About yourself
+- About the work
+- What is a multi-tenant system (based on work)
+- Sorting algorithms
+- Monolith Vs Micorservice architecture
+- Disadvantages of Microservice architecture
+- MySql - what is indexing
+
 *previously asked questions in this company*
 
 - https://www.hackerrank.com/challenges/suffix-rotation
@@ -143,3 +153,19 @@ xavier.children
 - Game Theory
 - Backtracking
 - Dynamic Programming
+
+## Ally OkR Solutions
+
+*Prep [based on chronus]*
+
+- Given a sorted array of duplicates of 2 how to find which number occurred only once?
+- K largest numbers from a stream of integers  
+- Next lexicographic string with same charcters  
+- Largest sum sub matrix
+- Rotate matrix 90 degrees inplace  
+- In a sorted array find the number of positions of the number that are not in sorted order
+- Give minimum for a sliding window
+- spiral traversal of 2D matrix
+- second shortest path in graph
+- Link left to right in each level
+- find the kth element in array such that their only factors are prime

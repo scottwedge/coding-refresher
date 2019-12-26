@@ -1,2 +1,3 @@
-- kadane's algorithm
-https://www.wikiwand.com/en/Maximum_subarray_problem
+- [kadane's algorithm])https://www.wikiwand.com/en/Maximum_subarray_problem)
+- Boyer Moore majority vote algorithm
+- Floyd's cycle detection algorithm
