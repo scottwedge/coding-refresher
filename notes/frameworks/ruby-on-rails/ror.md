@@ -1,15 +1,13 @@
 <details>
   <summary>Answer</summary>
-
   <p>
-
+  
   </p>
 </details>
 
 # Ruby
 
-- What is a class?
-- What is the difference between a class and a module?
+
 - What is an object?
 - How would you declare and use a constructor in Ruby?
 - How would you create getter and setter methods in Ruby?

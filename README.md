@@ -1,6 +1,8 @@
 # coding-refresher
 
-This repo is made for staying in touch with coding and be ready to solve coding problems and crack interviews any time, anywhere.
+This repo is made for staying in touch with coding and be ready to solve coding problems and crack interviews any time, anywhere. This repo will mainly focus on three languages `Ruby`, `JavaScript` and `Python`.
+
+> Disclaimer : There is no reason for choosing these three languages except personal interest.
 
 ## General rules of coding
 
@@ -10,7 +12,7 @@ This repo is made for staying in touch with coding and be ready to solve coding 
 
 ## Topics to master
 
-1. Choose a language and master it
+1. A programming Language
 2. Datastructures and algorithms
 3. Coding
 4. Object Oriented Programming

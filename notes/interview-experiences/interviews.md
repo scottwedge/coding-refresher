@@ -16,7 +16,7 @@
 |Kuvera           | F2F (1)                         |    1    |
 |Synaptic         | Ghosted                         |    0    |
 |Hiver            | Take Home                       |    0    |
-|Ally             | Initial Discussion              |    0    |
+|Ally             | HR screen, Hangouts,              |    0    |
 |Lynk Logistics   | Telephonic                      |         |
 
 
@@ -156,7 +156,7 @@ xavier.children
 
 ## Ally OkR Solutions
 
-*Prep [based on chronus]*
+*Prep*
 
 - Given a sorted array of duplicates of 2 how to find which number occurred only once?
 - K largest numbers from a stream of integers  
@@ -169,3 +169,7 @@ xavier.children
 - second shortest path in graph
 - Link left to right in each level
 - find the kth element in array such that their only factors are prime
+
+*Asked*
+
+- Top k frequent words in a given paragraph
