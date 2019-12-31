@@ -11,16 +11,18 @@
   - [1.8. String](#18-string)
   - [1.9. Tree](#19-tree)
   - [1.10. Heap](#110-heap)
-- [2. Top Interview Questions](#2-top-interview-questions)
-  - [2.1. Easy](#21-easy)
-  - [2.2. Medium](#22-medium)
-  - [2.3. Hard](#23-hard)
-  - [2.4. Amazon Top 50](#24-amazon-top-50)
-  - [2.5. Facebook Top 50](#25-facebook-top-50)
-  - [2.6. Google Top 50](#26-google-top-50)
-  - [2.7. LinkedIn Top 50](#27-linkedin-top-50)
-- [Analyzing Patterns](#analyzing-patterns)
-- [Refs](#refs)
+- [2. Leetcode Problems Topic wise](#2-leetcode-problems-topic-wise)
+- [3. Analyzing Patterns](#3-analyzing-patterns)
+- [4. Leetcode Discussion Threads](#4-leetcode-discussion-threads)
+- [5. Top Interview Questions](#5-top-interview-questions)
+  - [5.1. Easy](#51-easy)
+  - [5.2. Medium](#52-medium)
+  - [5.3. Hard](#53-hard)
+  - [5.4. Amazon Top 50](#54-amazon-top-50)
+  - [5.5. Facebook Top 50](#55-facebook-top-50)
+  - [5.6. Google Top 50](#56-google-top-50)
+  - [5.7. LinkedIn Top 50](#57-linkedin-top-50)
+- [6. Refs](#6-refs)
 
 <!-- /TOC -->
 
@@ -133,9 +135,33 @@
 - Top K Frequent Elements - https://leetcode.com/problems/top-k-frequent-elements/
 - Find Median from Data Stream - https://leetcode.com/problems/find-median-from-data-stream/
 
-# 2. Top Interview Questions
+# 2. Leetcode Problems Topic wise
 
-## 2.1. Easy
+- https://docs.google.com/spreadsheets/d/1SbpY-04Cz8EWw3A_LBUmDEXKUMO31DBjfeMoA0dlfIA/edit#gid=1085385252
+- https://github.com/SeanPrashad/lc
+- [Dynamic Programming Patterns](https://leetcode.com/discuss/general-discussion/458695/Dynamic-Programming-Patterns)
+- [Leetcode Patterns from educative](https://leetcode.com/discuss/general-discussion/457546/lc-problem-patterns-from-educativeio)
+- https://leetcode.com/discuss/career/449135/How-to-effectively-use-LeetCode-to-prepare-for-interviews!!
+- https://leetcode.com/discuss/general-discussion/448285/List-of-questions-sorted-by-common-patterns.
+
+# 3. Analyzing Patterns
+
+- [Tree traversals - Iterative](https://medium.com/leetcode-patterns/leetcode-pattern-0-iterative-traversals-on-trees-d373568eb0ec)
+- [Tree traversals - BFS, DFS - Part 1](https://medium.com/leetcode-patterns/leetcode-pattern-1-bfs-dfs-25-of-the-problems-part-1-519450a84353)
+- [Tree traversals - BFS, DFS - Part 2](https://medium.com/leetcode-patterns/leetcode-pattern-2-dfs-bfs-25-of-the-problems-part-2-a5b269597f52)
+- [String Problems - Sliding window](https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
+- [String Problems - Sliding window](https://medium.com/leetcode-patterns/leetcode-pattern-2-sliding-windows-for-strings-e19af105316b)
+- [Backtracking - 1](https://leetcode.com/problems/subsets/discuss/27281/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning)
+- [Backtracking - 2](https://medium.com/leetcode-patterns/leetcode-pattern-3-backtracking-5d9e5a03dc26)
+- [MetaStuff](https://medium.com/leetcode-patterns/leetcode-pattern-4-meta-stuff-4ebbbef7d4c0)
+
+# 4. Leetcode Discussion Threads
+
+- https://leetcode.com/discuss/general-discussion/459286/Best-Posts-of-2019
+
+# 5. Top Interview Questions
+
+## 5.1. Easy
 
 1. https://leetcode.com/problems/reverse-string
 2. https://leetcode.com/problems/maximum-depth-of-binary-tree
@@ -185,7 +211,7 @@
 46. https://leetcode.com/problems/count-primes
 47. https://leetcode.com/problems/reverse-integer
 
-## 2.2. Medium
+## 5.2. Medium
 
 1. https://leetcode.com/problems/binary-tree-inorder-traversal
 2. https://leetcode.com/problems/product-of-array-except-self
@@ -263,7 +289,7 @@
 75. https://leetcode.com/problems/divide-two-integers
 76. https://leetcode.com/problems/string-to-integer-atoi
 
-## 2.3. Hard
+## 5.3. Hard
 
 1. https://leetcode.com/problems/trapping-rain-water
 2. https://leetcode.com/problems/longest-consecutive-sequence
@@ -290,7 +316,7 @@
 23. https://leetcode.com/problems/max-points-on-a-line
 
 
-## 2.4. Amazon Top 50
+## 5.4. Amazon Top 50
 
 1. https://leetcode.com/problems/jewels-and-stones
 2. https://leetcode.com/problems/merge-two-binary-trees
@@ -343,7 +369,7 @@
 49. https://leetcode.com/problems/lru-cache
 51. https://leetcode.com/problems/word-ladder-ii
 
-## 2.5. Facebook Top 50
+## 5.5. Facebook Top 50
 
 1. https://leetcode.com/problems/hamming-distance
 2. https://leetcode.com/problems/move-zeroes
@@ -396,7 +422,7 @@
 50. https://leetcode.com/problems/lru-cache
 51. https://leetcode.com/problems/integer-to-english-words
 
-## 2.6. Google Top 50
+## 5.6. Google Top 50
 
 1. https://leetcode.com/problems/unique-email-addresses
 2. https://leetcode.com/problems/flipping-an-image
@@ -449,7 +475,7 @@
 49. https://leetcode.com/problems/regular-expression-matching
 50. https://leetcode.com/problems/lru-cache
 
-## 2.7. LinkedIn Top 50
+## 5.7. LinkedIn Top 50
 
 1. https://leetcode.com/problems/nested-list-weight-sum
 2. https://leetcode.com/problems/maximum-depth-of-binary-tree
@@ -502,18 +528,8 @@
 50. https://leetcode.com/problems/max-points-on-a-line
 51. https://leetcode.com/problems/valid-number
 
-# Analyzing Patterns
 
-- [Tree traversals - Iterative](https://medium.com/leetcode-patterns/leetcode-pattern-0-iterative-traversals-on-trees-d373568eb0ec)
-- [Tree traversals - BFS, DFS - Part 1](https://medium.com/leetcode-patterns/leetcode-pattern-1-bfs-dfs-25-of-the-problems-part-1-519450a84353)
-- [Tree traversals - BFS, DFS - Part 2](https://medium.com/leetcode-patterns/leetcode-pattern-2-dfs-bfs-25-of-the-problems-part-2-a5b269597f52)
-- [String Problems - Sliding window](https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
-- [String Problems - Sliding window](https://medium.com/leetcode-patterns/leetcode-pattern-2-sliding-windows-for-strings-e19af105316b)
-- [Backtracking - 1](https://leetcode.com/problems/subsets/discuss/27281/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning)
-- [Backtracking - 2](https://medium.com/leetcode-patterns/leetcode-pattern-3-backtracking-5d9e5a03dc26)
-- [MetaStuff](https://medium.com/leetcode-patterns/leetcode-pattern-4-meta-stuff-4ebbbef7d4c0)
-
-# Refs
+# 6. Refs
 
 - [leet code patterns - medium](https://medium.com/leetcode-patterns/)
 - [leet code patterns - reddit](https://www.reddit.com/r/lcpatterns/)
