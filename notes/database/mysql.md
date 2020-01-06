@@ -1,63 +1,89 @@
-## Mathematical operators
+# Operators and Functions
 
-MOD(m, n)
-m % n
-m MOD n
+Here m,n can be two numbers, a number and a string (string will be auto casted to number '100x' can be converted to 100 however 'x100x' will be NULL), a string and a string or column values
 
-m / n
+These operators can come in select or in where conditions
 
-abs(n)
+## Arithmetic Operators
 
-floor(n)
+| Operation | Operator |
+|-----------|----------|
+| Addition  |  m + n   |
+| Subtraction | m - n  |
+| Multiplication | m * n|
+| Division       | m / n|
+| Modulus        | m % n|
 
-ceil(n)
-ceiling(n)
+*Example*
 
-pow(m, n)
-power(m, n)
+These operators can be used in where condition as well
 
-ROUND(N,[D])
-- D inidicates upto howmany digits
+```mysql
+SELECT EnglishProductName,
+       Color,
+       StandardCost,
+       SalesAmount,
+       TaxAmt,
+       SalesAmount + TaxAmt  AS 'Total Amount',
+       SalesAmount - StandardCost AS 'Profit',
+       SalesAmount * 2 AS 'Multiplication Ex',
+       SalesAmount / TaxAmt,
+       SalesAmount % TaxAmt
+  FROM `MySQL Tutorial`.`product sales`;
+  ```
 
-RAND(), RAND(M);
-Giving M (an integer value) gives a repeatable random using M as base.
+## Math functions
 
-## Strings
+| Function     | function name     |
+|--------------|-------------------|
+| absolute     |     abs(n)        |
+| floor        |     floor(n)      |
+| ceiling      |     ceil(n)       |
+| rounding off n to D digits |     round(n, D)   |
+| exponentiation |    pow(m, n)     |
+| random number between 0 to 1 | rand() |
+| random number with seed n, repeatable value | rand(n) |
 
-substring(col_name, start, end_inclusive)
-left(col_name, number of chars from left)
-right(col_name, number of chars from right)
+## String funcitions
 
-lower
+>NOTE : In MySQL string starts with base index as 1
 
-upper
+| Function description                         | function                                |
+|----------------------------------------------|-----------------------------------------|
+| substring                                    |substring(col_name, start_index, number chars from start index inclusive of start index)|
+| substring from left end                      |left(col_name, number of chars from left)|
+| substring from right end                     |right(col_name, number of chars from right)|
+| convert to lower case                        |lower(col_name or string_value) |
+| convert to upper case                        |upper(col_name or string_value) |
+| reverse a string or a col                    |reverse                         |
+| join one or more strings                     |concat(one or more strings, columns) |
+| measure length of string in bytes            |octet_length() / LENGTH() |
+| measure length of string based on characters |CHAR_LENGTH() |
 
-reverse(col_name)
-
-concat(one or more strings, columns)
-
-octet_length() / LENGTH() returns the length of the string measured in bytes.
-CHAR_LENGTH() returns the length of the string measured in characters.
-
-order by col1 asc, col2 desc
-when there are mulitple columns in select, the columns not specified in the order by gets sorted in asc by default
-
-limit 10
-will return 10 records
-
-limit 1, 10
-will start from row number 2 and return 10 records
-
-limit 10 offset 1
-will start from row number 2 and return 10 records
-
-REGEXP and LIKE are used to totally different cases.
-LIKE is used to add wildcards to a string whereas REGEXP is used to match an attribute with Regular Expressions.
-In your case a firstname is more likely to be matched using LIKE than REGEXP and hence, it will be more optimized.
+# limit and offset
 
 
-case..when..else
+- limit 10
+- will return 10 records
 
+- limit 1, 10
+- will start from row number 2 and return 10 records
+
+- limit 10 offset 1
+-will start from row number 2 and return 10 records
+
+
+# Where conditions
+
+- Any function or operator can be used in where condition
+- REGEXP and LIKE are used to totally different cases.
+- LIKE is used to add wildcards to a string whereas REGEXP is used to match an attribute with Regular Expressions.
+- LIKE is little bit more performant compared to regexp
+
+
+# case..when..else
+
+```mysql
 SELECT CASE             
     WHEN A + B > C AND B + C > A AND A + C > B THEN
         CASE 
@@ -69,17 +95,16 @@ SELECT CASE
     END
 from
 triangles
+```
 
+# Questions
 
-concat
+- What type of field would you use to store currency information in a MySQL database?
 
-
-
-What type of field would you use to store currency information in a MySQL database?
-
-- Given the numerous field types above, which type to choose for various input formats can be a difficult, subjective decision. But there are some fairly common conventions across the tech world, and it can be helpful to know them before your interview.
 
 One of the most common — and counterintuitive — is currency storage. Since we tend to write prices and transactions as decimals — for example, 19.95 — you might be tempted to use a FLOAT or DOUBLE field for currency storage. But for more applications, the most commonly-used field type is actually INTEGER.
+
+Given the numerous field types above, which type to choose for various input formats can be a difficult, subjective decision. But there are some fairly common conventions across the tech world, and it can be helpful to know them before your interview.
 
 Why is that? Because storing currency values as US Dollars in a field type like FLOAT can lead to rounding errors and other compatibility problems down the line.
 

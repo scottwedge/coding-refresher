@@ -18,7 +18,7 @@
 |Hiver            | Take Home                       |    0    |
 |Ally             | HR screen, Hangouts,            |    0    |
 |Lynk Logistics   | Telephonic                      |    0    |
-|Fourkites        |                                 |    0    |
+|Fourkites        | Online (collabedit)             |    0    |
 
 
 # Google
@@ -176,6 +176,10 @@ xavier.children
 - Top k frequent words in a given paragraph
 
 # Fourkites
+
+*Asked*
+
+- De-Serialize tree (2 (1 (3) ()) (4))
 
 *prep*
 
