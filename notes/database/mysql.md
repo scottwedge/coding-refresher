@@ -1,3 +1,80 @@
+## Mathematical operators
+
+MOD(m, n)
+m % n
+m MOD n
+
+m / n
+
+abs(n)
+
+floor(n)
+
+ceil(n)
+ceiling(n)
+
+pow(m, n)
+power(m, n)
+
+ROUND(N,[D])
+- D inidicates upto howmany digits
+
+RAND(), RAND(M);
+Giving M (an integer value) gives a repeatable random using M as base.
+
+## Strings
+
+substring(col_name, start, end_inclusive)
+left(col_name, number of chars from left)
+right(col_name, number of chars from right)
+
+lower
+
+upper
+
+reverse(col_name)
+
+concat(one or more strings, columns)
+
+octet_length() / LENGTH() returns the length of the string measured in bytes.
+CHAR_LENGTH() returns the length of the string measured in characters.
+
+order by col1 asc, col2 desc
+when there are mulitple columns in select, the columns not specified in the order by gets sorted in asc by default
+
+limit 10
+will return 10 records
+
+limit 1, 10
+will start from row number 2 and return 10 records
+
+limit 10 offset 1
+will start from row number 2 and return 10 records
+
+REGEXP and LIKE are used to totally different cases.
+LIKE is used to add wildcards to a string whereas REGEXP is used to match an attribute with Regular Expressions.
+In your case a firstname is more likely to be matched using LIKE than REGEXP and hence, it will be more optimized.
+
+
+case..when..else
+
+SELECT CASE             
+    WHEN A + B > C AND B + C > A AND A + C > B THEN
+        CASE 
+            WHEN A = B AND B = C THEN 'Equilateral'
+            WHEN A = B OR B = C OR A = C THEN 'Isosceles'
+            ELSE 'Scalene'
+        END
+    ELSE 'Not A Triangle'
+    END
+from
+triangles
+
+
+concat
+
+
+
 What type of field would you use to store currency information in a MySQL database?
 
 - Given the numerous field types above, which type to choose for various input formats can be a difficult, subjective decision. But there are some fairly common conventions across the tech world, and it can be helpful to know them before your interview.

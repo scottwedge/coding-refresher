@@ -1,7 +1,5 @@
 - https://discuss.codechef.com/questions/18752/what-are-the-must-known-algorithms-for-online-programming-contests
 
-- http://www.ardendertat.com/2012/01/09/programming-interview-questions/
-
 - http://web.stanford.edu/class/cs97si/
 
 1. interview bit

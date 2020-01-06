@@ -2,3 +2,6 @@
 - Boyer Moore majority vote algorithm
 - Floyd's cycle detection algorithm
 - Newton's method to find square root
+- Tirangle inequality rule
+- Brian Kernighan’s Algorithm
+- 
