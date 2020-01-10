@@ -1,3 +1,16 @@
+
+# Horizontal Scaling vs Vertical Scaling
+
+|   Horizontal Scaling            |         Vertical Scaling          |
+|---------------------------------|-----------------------------------|
+|Needs load balancer to route traffic | N/A                           |
+|Network latency (slow)                 | Inter process Communication (slow)|
+|Scaling is easy - just add new servers | Has a hard limit on how far it can be extended |
+|More resilient                   | Single point of failure |
+|Data Consistency is problem           | No Consistency issues   |
+
+
+
 # The ABCD's of design interviews
 
 - A - Ask good questions 

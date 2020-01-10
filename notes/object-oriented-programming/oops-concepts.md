@@ -25,15 +25,17 @@ The four guiding principles of OOP are
 
 ## Encapsulation
 
-It is simply binding and hiding data to outside world. When an Object keeps its data private, it restricts access to other objects which they use it. Instead the data can be accessed only through methods exposed.
+It is simply binding and hiding data(attributes) to the outside world. When an Object keeps its data private, it restricts access to other objects which they use it. Instead the data can be accessed only through methods exposed.
 
-> Encapsulation is hiding data to the outside by making it accessible only through methods
+> Encapsulation is hiding the state (data / attributes) of an Object to the outside by making it accessible only through methods
 
 ## Abstraction
 
 It can thought of an extension of Encapsulation. Abstraction is hiding all irrelevant details to the outside world and only exposing the relevant details.
 
 Internal methods and attributes to the object that are kept private to hide implementation complexities.
+
+Eg: Imagine a stack implemented using dynamic array for storing instead of linked list. The user need not know what's used internally.
 
 ## Inheritance
 
@@ -54,51 +56,7 @@ It is a structured method for analyzing and designing a system by applying objec
 3. Establishing the interface of each object
 4. Making a desing, which can be converted to executables using OO language.
 
-**UML** is a standard tool to document OO Analysis and design.
-
-## UML
-
-UML stands for Unified Modeling Language.
-
-### Advantages of UML
-
-1. Helps develop a quick understanding of a software system.
-2. UML modeling helps in breaking a complex system into discrete pieces that can be easily understood.
-3. UML’s graphical notations can be used to communicate design decisions.
-4. Since UML is independent of any specific platform or language or technology, it is easier to abstract out concepts.
-5. It becomes easier to hand the system over to a new team.
-
-### Types of UML Diagrams
-
-- 14 types in total belonging to 2 categories
-
-#### Structural UML diagrams
-
-- Used for structure of a system or process
-
-1. Class diagram
-  a. describes structure and behavior in the use case. It provides a conceptual model of the system in terms of their relationships.
-2. Object diagram
-3. Package diagram
-4. Component diagram
-5. Composite structure diagram
-6. Deployment diagram
-7. Profile diagram
-
-#### Behavioral UML diagrams
-
-- Describes behavior of the system, its actors and its building components.
-
-1. Use case diagram
-  a. used to describe a set of user scenarios and illustrates the functionality provided by the system
-2. Activity diagram
-  a. functional flow of control between two or more class objects
-3. Sequence diagram
-  a. interactions among classes i terms of exchange over time
-4. State diagram
-5. Communication diagram
-6. Interaction overview diagram
-7. Timing diagram
+**UML** is often used as a standard tool to document OO Analysis and design.
 
 # References
 
