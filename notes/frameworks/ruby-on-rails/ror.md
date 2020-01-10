@@ -397,7 +397,7 @@ In order to protect against CSRF attacks, you can add protect_from_forgery to yo
 - Why do we need to use HTTPS instead of HTTP?
 
 
-Tessting
+Testing
 What is unit testing (in classical terms)?
 What is the primary technique for writing a test?
 What are your favorite tools for writing unit tests?
@@ -419,7 +419,7 @@ I want to be able to sign in/sign up by email/password or Facebook;
 I want to be able to create/update/delete projects;
 I want to be able to add tasks to my project;
 I want to be able to update/delete tasks;
-I want to be able to prioritise tasks within a project;
+I want to be able to prioritize tasks within a project;
 I want to be able to set a deadline for my task;
 I want to be able to mark a task as 'done';
 I want to be able to add comments to my tasks;
