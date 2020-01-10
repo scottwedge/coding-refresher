@@ -30,3 +30,8 @@
 |         Day - 5|
 | 21 | 2019-12-26 18:29:13 |  Y       | [Rotate Clockwise](../../src/practice/session-1/rotate_clock_wise.rb)|
 | 22 | 2019-12-26 18:30:12 |  Y       | [Spiral print](../../src/practice/session-1/print_spiral.rb)|
+| 23 | 2020-01-10 06:04:36 |  Had to read about it | [Sum of Two Integers](../../src/practice/session-1/bit_sum.rb)|
+| 24 | 2020-01-10 06:05:41 |  Y       | [Number of 1 Bits](../../src/practice/session-1/hamming_weight.rb)|
+| 25 | 2020-01-10 06:30:42 |  Had to read about it | [Counting Bits](../../src/practice/session-1/counting_bits.rb)|
+| 26 | 2020-01-10 06:41:22 | Had to read bit manipulation| [Missing Number](../../src/practice/session-1/missing_number.rb)|
+| 27 | 2020-01-10 07:40:38 | Y  | [Reverse Bits](../../src/practice/session-1/reverse_bits.rb)|
