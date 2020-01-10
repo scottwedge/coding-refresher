@@ -127,7 +127,7 @@
 - Implement Trie (Prefix Tree) - https://leetcode.com/problems/implement-trie-prefix-tree/
 - Add and Search Word - https://leetcode.com/problems/add-and-search-word-data-structure-design/
 - Word Search II - https://leetcode.com/problems/word-search-ii/
-- https://leetcode.com/problems/binary-tree-maximum-path-sum/
+- Binary Tree Maximum Path - https://leetcode.com/problems/binary-tree-maximum-path-sum/
 
 ## 1.10. Heap
 
@@ -143,6 +143,7 @@
 - [Leetcode Patterns from educative](https://leetcode.com/discuss/general-discussion/457546/lc-problem-patterns-from-educativeio)
 - https://leetcode.com/discuss/career/449135/How-to-effectively-use-LeetCode-to-prepare-for-interviews!!
 - https://leetcode.com/discuss/general-discussion/448285/List-of-questions-sorted-by-common-patterns.
+- https://github.com/deepakps22/leetcode-curated-list/blob/master/README.md
 
 # 3. Analyzing Patterns
 
