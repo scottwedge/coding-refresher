@@ -1,4 +1,4 @@
-# Aggregate Data
+# Summary
 
 | Name            | Rounds                          |  Result |
 |-----------------|---------------------------------|---------|
@@ -9,6 +9,7 @@
 |Google           | Telephonic (Online)             |    0    |
 |Facebook         | Telephonic (Online)             |    0    |
 |Solution Star    | Telephonic (Online)             |    0    |
+|_____________________________________________________________|
 |Freshdesk        | Coding (hackerrank), F2F (2)    |    0    |
 |Pramata          | Coding (hackerearth), F2F       |    1    |
 |Involvio         | Online (Video)                  |    1    |
@@ -177,10 +178,6 @@ xavier.children
 
 # Fourkites
 
-*Asked*
-
-- De-Serialize tree (2 (1 (3) ()) (4))
-
 *prep*
 
 - Traverse to the last kth node in the linked list using two pointers.
@@ -234,3 +231,11 @@ Try to give your best in an online round. Your score in this round will matter f
 - https://leetcode.com/discuss/interview-experience/149563/Linkedin-Staff-Software-Engineer
 - https://leetcode.com/discuss/interview-experience/204881/google-interviews-for-staff-sw-engineer
 - https://www.hackerearth.com/practice/basic-programming/implementation/basics-of-implementation/practice-problems/algorithm/energetic-fruits-1ddb5ca3/
+
+*Asked*
+
+- De-Serialize tree (2 (1 (3) ()) (4))
+
+          2
+        1   4
+      3

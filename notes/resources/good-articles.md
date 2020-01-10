@@ -9,3 +9,8 @@
 - https://decuqa.tumblr.com/post/140681253001/subsets-vs-permutations-survival-guide
 - https://www.reddit.com/r/cscareerquestions/comments/avf528/a_tiny_guide_to_grinding_leetcode_problems/
 - https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+
+
+Bit Manipulation
+
+https://leetcode.com/problems/sum-of-two-integers/discuss/167931/Solution-with-ACTUAL-explanation-(how-you-would-work-this-out)
